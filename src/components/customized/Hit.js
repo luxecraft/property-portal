@@ -1,32 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Highlight } from "react-instantsearch-dom";
 import PropTypes from "prop-types";
 import priceFormatter from "../PriceFormatter";
-import { Redirect } from "react-router";
 
 const imagesDirectory = "images/";
 function Hit(props) {
-
-  const [redirect, setRedirect] = useState(false)
-  const [hitProp, setHitProp] = useState({})
-
-  const sendProps = (hit) => {
-    setHitProp(hit)
-    setRedirect(true)
-  }
-
-
-  if (redirect) {
-    return <Redirect
-      to={{
-        pathname: "/property-details",
-        state: { currentProperty: hitProp }
-      }}
-    />
-  }
-
   return (
-    <div onClick={() => sendProps(props.hit)}>
+    <div>
       <div className="overlay-container">
         <img
           className="hit-image"
@@ -36,7 +16,7 @@ function Hit(props) {
 
         {
           (props.hit.construction_status != null) ?
-            <div class="overlay">{props.hit.construction_status ? 'Completed' : "On-Going"}</div>
+            <div class="overlay">{props.hit.construction_status ? 'On-Going' : "Completed"}</div>
             : null
         }
 
@@ -78,4 +58,4 @@ Hit.propTypes = {
   hit: PropTypes.object.isRequired,
 };
 
-export default Hit;
+export default Hit; 

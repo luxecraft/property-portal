@@ -9,4 +9,4 @@ const Stats = ({ processingTimeMS, nbHits, nbSortedHits, areHitsSorted }) => (
 
 const CustomStats = connectStats(Stats);
 
-export default CustomStats
+export default CustomStats 

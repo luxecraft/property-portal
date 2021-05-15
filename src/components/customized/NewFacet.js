@@ -24,4 +24,4 @@ function NewFacet() {
   );
 }
 
-export default NewFacet;
+export default NewFacet; 
