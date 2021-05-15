@@ -68,5 +68,5 @@ const RangeInput = ({ currentRefinement, refine, min, max }) => (
     />
   </form>
 );
-const CustomRangeInput = connectRange(RangeInput);
+const CustomRangeInput = connectRange(RangeInput); 
 export default CustomRangeInput;

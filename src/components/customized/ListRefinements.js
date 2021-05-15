@@ -47,6 +47,15 @@ function ListRefinements() {
             return item;
           }
           item.label = "";
+          if (item.attribute === "bhk_facet") {
+            item.items = item.items.map((item1) => {
+              if (!item1.label.includes(" BHK")) {
+                item1.label += " BHK";
+              }
+              return item1;
+            });
+            return item;
+          }
           if (
             ["amenities_facet", "amenities_extra_facet"].includes(
               item.attribute
