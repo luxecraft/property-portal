@@ -1,24 +1,25 @@
-import React from 'react';
+import React from "react";
 import {
   Hits,
   SearchBox,
   Pagination,
   ClearRefinements,
   Configure,
-} from 'react-instantsearch-dom';
-import Map from './customized/Map';
-import Hit from './customized/Hit';
-import CustomStats from './customized/CustomStats';
-import FacetListAmenities from './customized/FacetListAmenities';
-import FacetListAmenitiesExtra from './customized/FacetListAmenitiesExtra';
-import ListRefinements from './customized/ListRefinements';
-import PriceFacet from './customized/PriceFacet';
-import NewFacet from './customized/NewFacet';
-import BhkFacet from './customized/BhkFacet';
-import GatedFacet from './customized/GatedFacet';
-import TypeFacet from './customized/TypeFacet';
-import SqrftFacet from './customized/SqrftFacet';
-import PropTypes from 'prop-types';
+} from "react-instantsearch-dom";
+import Map from "./customized/Map";
+import Hit from "./customized/Hit";
+import CustomStats from "./customized/CustomStats";
+import FacetListAmenities from "./customized/FacetListAmenities";
+import FacetListAmenitiesExtra from "./customized/FacetListAmenitiesExtra";
+import ListRefinements from "./customized/ListRefinements";
+import PriceFacet from "./customized/PriceFacet";
+import NewFacet from "./customized/NewFacet";
+import BhkFacet from "./customized/BhkFacet";
+import GatedFacet from "./customized/GatedFacet";
+import TypeFacet from "./customized/TypeFacet";
+import SqrftFacet from "./customized/SqrftFacet";
+import PropTypes from "prop-types";
+import ToastComponent from "./customized/ToastComponent";
 
 export default function SearchComponent() {
   return (
@@ -50,18 +51,22 @@ export default function SearchComponent() {
           }
           reset={<img className="icon" src="/images/icons/close.png" alt="" />}
           translations={{
-            placeholder: 'Type City, State, Project, Builders...',
+            placeholder: "Type City, Project",
           }}
         />
         <CustomStats />
         <ListRefinements />
         <div className="hit-wrapper">
           <Hits className="hitList" hitComponent={Hit} />
-          <Map />
+          <div>
+            <ToastComponent />
+            <Map />
+          </div>
         </div>
         <div
           className="pagination-wrapper"
           onClick={() => {
+            console.log("object");
             window.scrollTo(0, 0);
           }}
         >
