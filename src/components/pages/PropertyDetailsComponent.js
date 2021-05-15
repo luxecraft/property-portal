@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import CustomMap from "../customized/CustomMap";
-const imagesDirectory = "images/";
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import CustomMap from '../customized/CustomMap';
+const imagesDirectory = 'images/';
 
 export default function PropertyDetailsComponent(props) {
-  const propertyDetailsParser = (data) => {
+  const propertyDetailsParser = data => {
     let temp_data = [];
     for (let i = 0; i < data.length; ++i) {
       if (!temp_data.includes(data[i])) {
@@ -21,43 +21,43 @@ export default function PropertyDetailsComponent(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const monthFinder = (mo) => {
+  const monthFinder = mo => {
     switch (parseInt(mo)) {
       case 1:
-        return "January";
+        return 'January';
         break;
       case 2:
-        return "February";
+        return 'February';
         break;
       case 3:
-        return "March";
+        return 'March';
         break;
       case 4:
-        return "April";
+        return 'April';
         break;
       case 5:
-        return "May";
+        return 'May';
         break;
       case 6:
-        return "June";
+        return 'June';
         break;
       case 7:
-        return "July";
+        return 'July';
         break;
       case 8:
-        return "August";
+        return 'August';
         break;
       case 9:
-        return "September";
+        return 'September';
         break;
       case 10:
-        return "October";
+        return 'October';
         break;
       case 11:
-        return "November";
+        return 'November';
         break;
       case 12:
-        return "December";
+        return 'December';
         break;
       default:
         break;
@@ -72,7 +72,7 @@ export default function PropertyDetailsComponent(props) {
   return (
     <div className="container">
       <Link
-        to={currentProperty.construction_status == null ? "/rental" : "/sale"}
+        to={currentProperty.construction_status == null ? '/rental' : '/sale'}
       >
         <span className="float-left">
           <svg
@@ -104,7 +104,7 @@ export default function PropertyDetailsComponent(props) {
       <div className="prop-details-top">
         <img
           className="big-image"
-          src={imagesDirectory + currentProperty.image_url.split("/images/")[1]}
+          src={imagesDirectory + currentProperty.image_url.split('/images/')[1]}
           alt={currentProperty.project_name}
         />
         <div className="text-details">
@@ -142,27 +142,29 @@ export default function PropertyDetailsComponent(props) {
           </p>
 
           <p className="project-info">
-            <b>Area and BHK:</b> {currentProperty.sqrft} ft<sup>2</sup> -{" "}
+            <b>Area and BHK:</b> {currentProperty.sqrft} ft<sup>2</sup> -{' '}
             {currentProperty.bhk_facet} BHK
           </p>
 
           {currentProperty.construction_status != null ? (
             <p className="project-info">
-              <b>Construction Status:</b>{" "}
-              {currentProperty.construction_status ? "Completed" : "On-Going"}
+              <b>Construction Status:</b>{' '}
+              {currentProperty.construction_status != true
+                ? 'Completed'
+                : 'On-Going'}
             </p>
           ) : null}
 
-          {currentProperty.construction_status != null ? (
+          {currentProperty.construction_status != false ? (
             <p className="project-info">
-              <b>Date of completion:</b>{" "}
+              <b>Date of completion:</b>{' '}
               {currentProperty.construction_status
                 ? monthFinder(
-                    currentProperty.date_of_completion.split(",")[0]
+                    currentProperty.date_of_completion.split(',')[0]
                   ) +
-                  " 20" +
-                  currentProperty.date_of_completion.split(", ")[1]
-                : "-"}
+                  ' 20' +
+                  currentProperty.date_of_completion.split(', ')[1]
+                : '-'}
             </p>
           ) : null}
 
@@ -205,20 +207,20 @@ export default function PropertyDetailsComponent(props) {
           </p>
 
           <p className="project-info-bottom">
-            <b>Age of Property:</b>{" "}
-            {currentProperty.new_facet ? "Brand New" : "More than 5 years old"}
+            <b>Age of Property:</b>{' '}
+            {currentProperty.new_facet ? 'Brand New' : 'More than 5 years old'}
           </p>
 
           <p className="project-info-bottom">
-            <b>Gated Community:</b>{" "}
-            {currentProperty.gated_community ? "Yes" : "No"}
+            <b>Gated Community:</b>{' '}
+            {currentProperty.gated_community ? 'Yes' : 'No'}
           </p>
 
           {currentProperty.rate_per_sqrft != null ? (
             <p className="project-info-bottom">
               <b>
                 Rate per ft<sup>2</sup>:
-              </b>{" "}
+              </b>{' '}
               ₹{currentProperty.rate_per_sqrft}
             </p>
           ) : null}
