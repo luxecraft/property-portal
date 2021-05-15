@@ -155,7 +155,7 @@ export default function PropertyDetailsComponent(props) {
             </p>
           ) : null}
 
-          {currentProperty.construction_status != false ? (
+          {currentProperty.construction_status != null ? (
             <p className="project-info">
               <b>Date of completion:</b>{' '}
               {currentProperty.construction_status
