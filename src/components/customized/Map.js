@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   GoogleMapsLoader,
   GeoSearch,
   Marker,
-} from "react-instantsearch-dom-maps";
-import ToggleTip from "../ToggleTip";
+} from 'react-instantsearch-dom-maps';
+import ToggleTip from '../ToggleTip';
 
 function Map() {
   const [toggleTipHit, settoggleTipHit] = useState(null);
-  const renderToggleTip = (hit) => {
+  const renderToggleTip = hit => {
     settoggleTipHit(hit);
   };
   return (
     <div className="hitsMap">
       <GoogleMapsLoader apiKey="AIzaSyBVG1AFgOTC7nAqOFY3Tmb1KAUqoWRzuUo">
-        {(google) => (
+        {google => (
           <GeoSearch google={google}>
             {({ hits }) => (
               <div>
-                {hits.map((hit) => (
+                {hits.map(hit => (
                   <>
                     <Marker
                       key={hit.id}

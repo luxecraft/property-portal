@@ -1,60 +1,165 @@
-em {
-  background: cyan;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+body {
+  font-family: sans-serif;
+  padding: 1em;
 }
 
-.header {
+.ais-Pagination {
+  margin-top: 1em;
+  margin-bottom: 20px;
+}
+
+.left-panel {
+  float: left;
+  width: 250px;
+}
+
+.right-panel {
+  margin-left: 260px;
+}
+
+.hit-wrapper {
+  display: flex;
+}
+
+.hitList {
+  /* border: red solid !important; */
+  max-width: 60%;
+  min-width: 60%;
+}
+
+.hitsMap {
+  height: 34em; 
+  width: 100%;
+}
+
+/* SEARCH BOX */
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-SearchBox-input {
+  border-radius: 10px;
+  border: none;
+  height: 3em;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px -12px rgba(58, 63, 69, 0.219);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-left: 3.5em;
+  transition: all ease-in 100ms;
+  border: rgba(132, 132, 132, 0.142) solid 0.1px;
+}
+
+.ais-SearchBox-input:focus {
+  transition: all ease-in 100ms;
+
+  outline: currentcolor none medium;
+}
+
+.ais-SearchBox-input:hover {
+  transition: all ease-in 100ms;
+
+  outline: currentcolor none medium;
+}
+.ais-SearchBox-submit {
+  margin-left: 1em;
+}
+
+.ais-SearchBox-reset {
+  margin-right: 0.75em;
+}
+
+
+.ais-SearchBox-reset[hidden] {
+    display: none; 
+}
+
+
+/* HITS */
+
+.ais-Hits-item, .ais-InfiniteHits-item, .ais-InfiniteResults-item, .ais-Results-item 
+{
+  /* border: red solid !important; */
+
+  padding: 0px;
+  margin-bottom: 1em;
+  width: 40%;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  border: none;  
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  color: #111111;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-left: 0.5em;
+}
+
+.hit-description {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+.hit-image {
+  margin: none;
+  padding: none;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.hit-price-city {
+  display: flex;
+  justify-content: space-between;
+  color: #111111;
+  font-family: 'Jost', sans-serif;
+  align-items: center;
+  height: 2em;
+  margin-bottom: 2em;
+}
+
+.hit-city {
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+
+.hit-price {
+  font-weight: 700;
+  margin-right: 0.5em;
+  font-size: 24px;
+}
+
+.location-bar {
   display: flex;
   align-items: center;
-  min-height: 50px;
-  padding: 0.5rem 1rem;
-  background-image: linear-gradient(to right, #8e43e7, #00aeff);
-  color: #fff;
-  margin-bottom: 1rem;
+  margin-left: 0.5em;
 }
 
-.header a {
-  color: #fff;
-  text-decoration: none;
+.location-marker {
+  height: 2em;
 }
 
-.header-title {
-  font-size: 1.2rem;
-  font-weight: normal;
+
+.stats {
+  margin-left: 1em;
+  margin-top: -2em;
+  margin-bottom: 2em;
 }
 
-.header-title::after {
-  content: ' ▸ ';
-  padding: 0 0.5rem;
-}
-
-.header-subtitle {
-  font-size: 1.2rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.search-panel {
-  display: flex;
-}
-
-.search-panel__filters {
-  flex: 1;
-}
-
-.search-panel__results {
-  flex: 3;
-}
-
-.searchbox {
-  margin-bottom: 2rem;
-}
-
-.pagination {
-  margin: 2rem auto;
-  text-align: center;
+.icon {
+  height: 1em;
+  margin-bottom: 0.2em;
 }
