@@ -49,6 +49,9 @@ export default function SearchComponent() {
             <img className="icon" src="/images/icons/search.png" alt="" />
           }
           reset={<img className="icon" src="/images/icons/close.png" alt="" />}
+          translations={{
+            placeholder: 'Type City, State, Project, Builders...',
+          }}
         />
         <CustomStats />
         <ListRefinements />
