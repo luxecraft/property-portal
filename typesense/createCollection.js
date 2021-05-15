@@ -71,7 +71,7 @@ async function create_collection() {
   const client = new typesense.Client({
     nodes: [
       {
-        host: "13.233.100.22",
+        host: "localhost",
         port: "8109",
         protocol: "http",
       },

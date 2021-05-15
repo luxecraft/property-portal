@@ -1,12 +1,12 @@
 let typesense = require("typesense");
-let props_rent = require("./data_1L_rent.json");
-let props_sale = require("./data_1L_sale.json");
+let props_rent = require("./data_10K_rent.json");
+let props_sale = require("./data_10K_sale.json");
 
 async function index_documents() {
   const client = new typesense.Client({
     nodes: [
       {
-        host: "13.233.100.22",
+        host: "localhost",
         port: "8109",
         protocol: "http",
       },
@@ -14,7 +14,7 @@ async function index_documents() {
     apiKey: "xyz",
   });
   let data = props_rent.slice(0, 100);
-  for (let i = 1; i < 1000; ++i) {
+  for (let i = 1; i < 100; ++i) {
     await client
       .collections("rent")
       .documents()
@@ -24,11 +24,11 @@ async function index_documents() {
   await client
     .collections("rent")
     .documents()
-    .import(props_rent.slice(99900, 100000), { batch_size: 100 });
+    .import(props_rent.slice(9900, 10000), { batch_size: 100 });
   let result = await client.collections("rent").retrieve();
   console.log(result);
   data = props_sale.slice(0, 100);
-  for (let i = 1; i < 1000; ++i) {
+  for (let i = 1; i < 100; ++i) {
     await client
       .collections("sale")
       .documents()
@@ -38,7 +38,7 @@ async function index_documents() {
   await client
     .collections("sale")
     .documents()
-    .import(props_sale.slice(99900, 100000), { batch_size: 100 });
+    .import(props_sale.slice(9900, 10000), { batch_size: 100 });
   result = await client.collections("sale").retrieve();
   console.log(result);
 }
