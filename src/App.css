@@ -153,8 +153,14 @@ body {
 .hit-price {
   font-weight: 700;
   margin-right: 0.5em;
-  margin-top: 1.5em;
+  margin-bottom: 0em;
+  margin-top: 1.8em;
   font-size: 24px;
+}
+
+.sqrft-bhk {
+  margin-bottom: -1em;
+  font-size: 14px;
 }
 
 .location-bar {
@@ -218,6 +224,16 @@ body {
              -20px -20px 60px #ffffff;
 }
 
+.ais-Pagination-link:hover {
+  color: tomato;
+  background-color: rgb(254, 236, 232);
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link:hover {
+  color: #fff;
+  background-color: tomato;
+}
+
 
 .title-text {
   font-weight: 700;
@@ -243,6 +259,7 @@ body {
   display: flex;
   margin: auto;
   margin-left: 8em;
+  align-items: center;
   justify-content: space-between;
   padding: 0;
   max-width: 13em;
@@ -275,8 +292,8 @@ body {
   font-size: 24px;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.15em;
+  padding-right: 1.15em;
   border-radius: 20px 20px 20px 20px;
   /* background-color: tomato; */
 }
@@ -377,20 +394,23 @@ body {
   color: #111;
 }
 
-/* .ais-RefinementList-checkbox {
-  background-color: #ff5d83;
-  border: none;
-  box-shadow:  5px 5px 20px -5px #d9d9d9,
-  -5px -5px 20px -5px #d6d6d6;
-} */
+.ais-RefinementList-item {
+  transition: all 1000ms ease;
+}
+
+.ais-RefinementList-count {
+  background-color: rgba(255, 99, 71, 0.267);
+  color: rgb(64, 28, 22);
+}
+
 
 .range-box {
   border-radius: 10px;
-  border: solid #d9d9d96e 1px;
-  box-shadow:  5px 5px 20px -5px #d9d9d9,
-             -5px -5px 20px -5px #d6d6d6;
+  border: solid #d9d9d94d 1px;
+  box-shadow:  5px 5px 20px -8px #d9d9d9;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+  width: 100%;
 }
 
 .range-box::placeholder {
@@ -398,7 +418,7 @@ body {
 }
 
 .to-text {
-  padding-left: 4.5em;
+  text-align: center;
 }
 
 .btn-success {
@@ -431,4 +451,199 @@ body {
   padding-right: 1em;
   text-align: end;
   height: 50%;
+}
+
+
+/* PROPERTY DETAILS PAGE */
+.prop-details-top {
+  margin-top: 3em;
+  display: flex;
+}
+
+
+.big-image {
+  border-radius: 20px;
+  box-shadow:  10px 10px 20px #d9d9d99d,
+              -10px -10px 20px #e0e0e052;
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 38px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 1.3em;
+}
+
+.project-price {
+  font-weight: 700;
+  font-size: 38px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 5em;
+}
+
+.project-citystreet {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  padding-left: 2.5em;
+}
+
+.location-marker-detail {
+  height: 1.5em;
+  margin-right: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.project-info {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  padding-left: 2.5em;
+}
+
+.bottom-detail-heading {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.prop-details-bottom {
+  margin-top: 3em;
+  display: flex;
+}
+
+.project-info-bottom {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}
+
+.right-bottom {
+  padding-left: 10em;
+}
+
+.amenities-text {
+  margin-top: 0.5em;
+}
+
+
+/* Map */
+
+.gm-style-pbc, .gm-style, .gm-style-pbt, .map-overlay, .map-overlay > div, .map-overlay div div {
+  border-radius: 20px !important;
+}
+
+.map-overlay {
+  margin-top: 2em;
+  box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+.float-left {
+  color: #111;
+}
+.float-left:hover {
+  fill: url(#MyGradient);
+}
+
+.myPath:hover {
+  fill:url(#MyGradient);
+}
+
+
+/* Tool Tip */
+
+.map-tool-tip {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 15em;
+  width: 12em;
+}
+
+.tool-tip-prop-name {
+  color: #111;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0.1em;
+  margin-bottom: 0.8em;
+}
+
+.tool-tip-loc {
+  color: #111;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: -0.3em;
+}
+
+.tool-tip-price {
+  color: #111;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: -0.3em;
+}
+
+.overlay-container-tip {
+  position: relative;
+}
+
+
+.overlay-tip {
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+  text-align: end;
+  height: 50%;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.github-icon {
+  margin-left: 38em;
+}
+
+
+/* Toast */
+
+.toast-comp {
+  margin-top: -2em;
+  padding-left: 2em;
+  margin-bottom: -2em;
+}
+
+.remove-toast {
+  opacity: 0;
+  height: 0em;
+}
+
+.toast-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 23em;
+}
+
+.close-btn-toast {
+  cursor: pointer;
+  float: right;
+}
+
+.toast-title {
+  margin-bottom: 0em;
 }
