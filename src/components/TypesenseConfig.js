@@ -12,8 +12,8 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     ],
   },
   additionalSearchParameters: {
-    queryBy: 'city_facet, street_name, project_name',
-    queryByWeights: '2,1,1',
+    queryBy: 'city_facet',
+    queryByWeights: '2',
     dropTokensThreshold: 2,
     typoTokensThreshold: 2,
     useServerSideSearchCache: true,
