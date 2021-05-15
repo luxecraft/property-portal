@@ -51,7 +51,7 @@ export default function SearchComponent() {
           }
           reset={<img className="icon" src="/images/icons/close.png" alt="" />}
           translations={{
-            placeholder: 'Type City, Street name, State, Project, Builder ...',
+            placeholder: 'Type City, Street name, State, Project, Builder',
           }}
         />
         <CustomStats />
