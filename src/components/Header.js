@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Header() {
   const [curentPage, setCurentPage] = useState(
-    window.location.href.split("3000/")[1] || window.location.href.split("live/")[1]
+    window.location.href.split("3000/")[1] || window.location.href.split("live/")[1] || window.location.href.split("app/")[1]
   );
 
   console.log(window.location.href.split("3001/")[1])
@@ -30,6 +30,10 @@ function Header() {
           href="/sale"
         >
           Sale
+        </a>
+
+        <a className="github-icon" href="https://github.com/HarisaranG/property-portal-hackathon">
+          <img height="40em" src="images/icons/github.png" />
         </a>
       </div>
     </div>
