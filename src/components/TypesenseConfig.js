@@ -7,7 +7,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
       {
         host: 'localhost',
         port: '8109',
-        protocol: 'https',
+        protocol: 'http',
       },
     ],
   },
