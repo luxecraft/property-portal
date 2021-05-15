@@ -5,4 +5,4 @@ function TypeFacet() {
   return <RefinementList attribute="type_facet" />;
 }
 
-export default TypeFacet;
+export default TypeFacet; 

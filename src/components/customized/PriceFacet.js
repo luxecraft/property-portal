@@ -5,4 +5,4 @@ function PriceFacet() {
   return <CustomRangeInput attribute="price" />;
 }
 
-export default PriceFacet;
+export default PriceFacet; 

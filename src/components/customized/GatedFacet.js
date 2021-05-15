@@ -25,4 +25,4 @@ function GatedFacet() {
   );
 }
 
-export default GatedFacet;
+export default GatedFacet; 

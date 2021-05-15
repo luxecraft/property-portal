@@ -19,5 +19,5 @@ function ToggleTip({ hit }) {
 ToggleTip.propTypes = {
   hit: PropType.object.isRequired,
 };
-
+ 
 export default ToggleTip;

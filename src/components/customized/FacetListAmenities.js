@@ -20,4 +20,4 @@ function FacetListAmenities() {
   );
 }
 
-export default FacetListAmenities;
+export default FacetListAmenities; 

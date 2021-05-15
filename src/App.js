@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import RentalComponent from './components/pages/RentalComponent';
 import SaleComponent from './components/pages/SaleComponent';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (
