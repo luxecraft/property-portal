@@ -5,9 +5,9 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     apiKey: 'xyz',
     nodes: [
       {
-        host: 'localhost',
-        port: '8109',
-        protocol: 'http',
+        host: 'server.harisaran.live',
+        port: '443',
+        protocol: 'https',
       },
     ],
   },
