@@ -7,6 +7,11 @@ import {
 import ToggleTip from "../ToggleTip";
 
 function Map() {
+
+  const toggleToolTip = () => {
+    settoggleTipHit(null)
+  }
+
   const [toggleTipHit, settoggleTipHit] = useState(null);
   const renderToggleTip = (hit) => {
     settoggleTipHit(hit);
@@ -27,15 +32,15 @@ function Map() {
                     />
                   </>
                 ))}
-                {toggleTipHit ? <ToggleTip hit={toggleTipHit} /> : null}
+                {toggleTipHit ? <ToggleTip toggler={toggleToolTip} hit={toggleTipHit} /> : null}
               </div>
             )}
           </GeoSearch>
         )}
-        {}
+        { }
       </GoogleMapsLoader>
     </div>
   );
 }
- 
+
 export default Map;
