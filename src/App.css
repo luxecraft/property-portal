@@ -710,6 +710,17 @@ body {
   background-image: linear-gradient(to right, #ffa7606b , #ff5d8363);
 }
 
+.gif-bar {
+  display: flex;
+}
+
+.gif-bar img {
+  border-radius: 20px;
+  margin-top: 2em;
+  margin-left: 5em;
+  height: 20em;
+}
+
 .you-text {
   font-size: 30px;
   font-weight: 700;

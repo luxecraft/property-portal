@@ -27,52 +27,57 @@ function Home() {
           </ul>
         </p>
 
-        <h4 className="about-head">
-          Project Abstract
-        </h4>
 
-        <p className="about-desc">
-          This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through lakhs of records (in this case, over 2 Lakh records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
+        <div className="gif-bar">
+          <div>
+            <h4 className="about-head">
+              Project Abstract
+          </h4>
+            <p className="about-desc project-abstract">
+              This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through lakhs of records (in this case, over 2 Lakh records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
 
-        <h6 className="about-head-mini">
-            Features
-        </h6>
-          <ul>
-            <li>
-              Geo Search
-            </li>
-            <li>
-              Powerful Facet Filtering
-            </li>
-            <li>
-              Search as you type
-            </li><li>
-              Search as you scroll the map
-            </li><li>
-              Typo Tolerant
-            </li>
-            <li>
-              Indexes lakhs of records
-            </li>
-          </ul>
+            <h6 className="about-head-mini">
+                Features
+            </h6>
+              <ul>
+                <li>
+                  Geo Search
+              </li>
+                <li>
+                  Powerful Facet Filtering
+              </li>
+                <li>
+                  Search as you type
+              </li><li>
+                  Search as you scroll the map
+              </li><li>
+                  Typo Tolerant
+              </li>
+                <li>
+                  Indexes lakhs of records
+              </li>
+              </ul>
 
-          <h6 className="about-head-mini">
-            Potential Features (in the future)
-        </h6>
-          <ul>
-            <li>
-              User personalization
-            </li>
-            <li>
-              Suggestions based on current location
-            </li>
-            <li>
-              Scale up to millions of records
-            </li><li>
-              Improving contact features
-            </li>
-          </ul>
-        </p>
+              <h6 className="about-head-mini">
+                Potential Features (in the future)
+            </h6>
+              <ul>
+                <li>
+                  User personalization
+              </li>
+                <li>
+                  Suggestions based on current location
+              </li>
+                <li>
+                  Scale up to millions of records
+              </li><li>
+                  Improving contact features
+              </li>
+              </ul>
+            </p>
+          </div>
+          <img src="https://propertyportal.s3.ap-south-1.amazonaws.com/images/geosearch.gif" alt="gif" />
+        </div>
 
         <h4 className="about-head">
           Hackathon Domain and Problem Statement
