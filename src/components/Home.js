@@ -73,6 +73,12 @@ function Home() {
               </li><li>
                   Improving contact features
               </li>
+                <li>
+                  Making the web app responsive
+              </li>
+                <li>
+                  Use search parameters like near me, within 5km radius
+              </li>
               </ul>
             </p>
           </div>
