@@ -19,10 +19,11 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-instantsearch-dom": "6.11.0",
-    "reactstrap": "^8.9.0",
     "react-instantsearch-dom-maps": "^6.11.0",
     "react-router-dom": "^5.2.0",
+    "react-router-transition": "^2.1.0",
     "react-scripts": "2.1.1",
+    "reactstrap": "^8.9.0",
     "rheostat": "4",
     "typesense-instantsearch-adapter": "typesense/typesense-instantsearch-adapter#geo-search"
   },

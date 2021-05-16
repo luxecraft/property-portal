@@ -4,6 +4,9 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
+.switch-wrapper {
+  transition: 500ms all;
+}
 
 
 .left-panel {
@@ -80,7 +83,7 @@ body {
 }
 
 .ais-SearchBox-reset {
-  margin-right: 0.75em;
+  margin-right: 6em;
 }
 
 .ais-SearchBox-reset[hidden] {

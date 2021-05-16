@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -8,32 +8,38 @@ function Header() {
     window.location.href.split('app/')[1]
   );
 
-  console.log(window.location.href.split('3001/')[1]);
+  const [trigger, setTrigger] = useState(false)
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    setCurentPage(
+      window.location.href.split('3000/')[1] ||
+      window.location.href.split('live/')[1] ||
+      window.location.href.split('app/')[1]
+    )
+  }, [trigger])
 
   return (
     <div className="header-main">
       <h2 className="title-text" ><Link to="/" className="title-link">Property Portal</Link></h2>
       <div className="navbarr">
-        <a
+        <Link
+          onClick={() => setTrigger(!trigger)}
           className={
             (curentPage == 'rental' ? 'active-tab ' : '') + 'rental-button'
           }
-          href="/rental"
+          to="/rental"
         >
           Rental
-        </a>
-        <a
+        </Link>
+        <Link
+          onClick={() => setTrigger(!trigger)}
           className={
             (curentPage == 'sale' ? 'active-tab ' : '') + 'sale-button'
           }
-          href="/sale"
+          to="/sale"
         >
           Sale
-        </a>
+        </Link>
 
         <a
           className="github-icon"
