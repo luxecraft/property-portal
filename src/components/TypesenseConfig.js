@@ -5,15 +5,15 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     apiKey: 'xyz',
     nodes: [
       {
-        host: 'localhost',
-        port: '8109',
-        protocol: 'http',
+        host: 'server.harisaran.live',
+        port: '443',
+        protocol: 'https',
       },
     ],
   },
   additionalSearchParameters: {
     queryBy: 'city_facet, state_facet, street_name, project_name, builder_name',
-    queryByWeights: '2,1,2, 1, 1',
+    queryByWeights: '2,1,2,1,1',
     dropTokensThreshold: 2,
     typoTokensThreshold: 2,
     useServerSideSearchCache: true,

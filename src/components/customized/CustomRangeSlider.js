@@ -56,4 +56,4 @@ const RangeSlider = ({ min, max, currentRefinement, canRefine, refine }) => {
 };
 
 const CustomRangeSlider = connectRange(RangeSlider);
-export default CustomRangeSlider;
+export default CustomRangeSlider; 

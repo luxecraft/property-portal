@@ -21,4 +21,4 @@ function BhkFacet() {
   );
 }
 
-export default BhkFacet;
+export default BhkFacet; 

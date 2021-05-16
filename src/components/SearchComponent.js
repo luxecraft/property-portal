@@ -19,6 +19,7 @@ import GatedFacet from './customized/GatedFacet';
 import TypeFacet from './customized/TypeFacet';
 import SqrftFacet from './customized/SqrftFacet';
 import PropTypes from 'prop-types';
+import ToastComponent from './customized/ToastComponent';
 
 export default function SearchComponent() {
   return (
@@ -49,16 +50,23 @@ export default function SearchComponent() {
             <img className="icon" src="/images/icons/search.png" alt="" />
           }
           reset={<img className="icon" src="/images/icons/close.png" alt="" />}
+          translations={{
+            placeholder: 'Type City, Street name, State, Project, Builder',
+          }}
         />
         <CustomStats />
         <ListRefinements />
         <div className="hit-wrapper">
           <Hits className="hitList" hitComponent={Hit} />
-          <Map />
+          <div>
+            <ToastComponent />
+            <Map />
+          </div>
         </div>
         <div
           className="pagination-wrapper"
           onClick={() => {
+            console.log('object');
             window.scrollTo(0, 0);
           }}
         >

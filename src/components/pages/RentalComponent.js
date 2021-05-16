@@ -13,4 +13,4 @@ function RentalComponent() {
   );
 }
 
-export default RentalComponent;
+export default RentalComponent; 
