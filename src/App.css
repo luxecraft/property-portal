@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 
 body {
   font-family: 'Jost', sans-serif;
@@ -698,6 +698,12 @@ body {
 
 .about-head {
   font-weight: 700;
+}
+
+.about-head-mini {
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .about-note {

@@ -39,6 +39,7 @@ function Header() {
           className="github-icon"
           href="https://github.com/HarisaranG/property-portal-hackathon"
           target="_blank"
+          rel="noopener"
         >
           <img height="40em" src="images/icons/github.png" />
         </a>

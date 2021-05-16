@@ -197,7 +197,7 @@ function Home() {
         </div>
 
         <p className="about-youtube">
-          <a className="you-text" href="https://www.youtube.com/watch?v=eQM2VgYQIlc">Youtube Link</a>
+          <a className="you-text" href="https://www.youtube.com/watch?v=eQM2VgYQIlc" target="_blank" rel="noopener">Youtube Link</a>
         </p>
       </div>
     </div>
