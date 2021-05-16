@@ -22,6 +22,7 @@ import SortByRental from './customized/SortByRental';
 import PropTypes from 'prop-types';
 import ToastComponent from './customized/ToastComponent';
 import SortBySale from './customized/SortyBySale';
+import OngoingFacet from './customized/OngoingFacet';
 
 export default function SearchComponent({ name }) {
   return (
@@ -34,6 +35,12 @@ export default function SearchComponent({ name }) {
         <SqrftFacet />
         <h4 className="sidebar-heading">BHK</h4>
         <BhkFacet />
+        {name === 'sale' ? (
+          <div>
+            <h4 className="sidebar-heading">Status</h4>
+            <OngoingFacet />
+          </div>
+        ) : null}
         <h4 className="sidebar-heading">New/Old</h4>
         <NewFacet />
         <h4 className="sidebar-heading">Gated Community</h4>
@@ -56,25 +63,25 @@ export default function SearchComponent({ name }) {
             placeholder: 'Type City, Street name, State, Project, Builder',
           }}
         />
-      </div>
-      <CustomStats />
-      <ListRefinements />
-      <div className="hit-wrapper">
-        <Hits className="hitList" hitComponent={Hit} />
-        <div>
-          <ToastComponent />
-          <Map />
-          {name === 'rent' ? <SortByRental /> : <SortBySale />}
+        <CustomStats />
+        <ListRefinements />
+        <div className="hit-wrapper">
+          <Hits className="hitList" hitComponent={Hit} />
+          <div>
+            <ToastComponent />
+            <Map />
+            {name === 'rent' ? <SortByRental /> : <SortBySale />}
+          </div>
         </div>
-      </div>
-      <div
-        className="pagination-wrapper"
-        onClick={() => {
-          console.log('object');
-          window.scrollTo(0, 0);
-        }}
-      >
-        <Pagination className="ais-Pagination" />
+        <div
+          className="pagination-wrapper"
+          onClick={() => {
+            console.log('object');
+            window.scrollTo(0, 0);
+          }}
+        >
+          <Pagination className="ais-Pagination" />
+        </div>
       </div>
     </div>
   );
