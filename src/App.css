@@ -236,12 +236,28 @@ body {
 
 
 .title-text {
+  
   font-weight: 700;
   font-family: 'Jost', sans-serif;
   font-size: 50px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding-left: 1em;
+}
+
+.title-link {
+  color: #111;
+  text-decoration: none;
+  transition: 300ms all ease;
+}
+
+.title-link:hover {
+  color: #111;
+  transition: 300ms all ease;
+  background: linear-gradient(to right, #ffa760 , #ff5d83);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navflex {
