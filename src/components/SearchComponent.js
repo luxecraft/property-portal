@@ -54,15 +54,18 @@ export default function SearchComponent({ name }) {
         <Configure hitsPerPage={8} />
       </div>
       <div className="right-panel">
-        <SearchBox
-          submit={
-            <img className="icon" src="/images/icons/search.png" alt="" />
-          }
-          reset={<img className="icon" src="/images/icons/close.png" alt="" />}
-          translations={{
-            placeholder: 'Type City, Street name, State, Project, Builder',
-          }}
-        />
+        <div className="search-sort">
+          <SearchBox
+            submit={
+              <img className="icon" src="/images/icons/search.png" alt="" />
+            }
+            reset={<img className="icon" src="/images/icons/close.png" alt="" />}
+            translations={{
+              placeholder: 'Type City, Street name, State, Project, Builder',
+            }}
+          />
+          {name === 'rent' ? <SortByRental /> : <SortBySale />}
+        </div>
         <CustomStats />
         <ListRefinements />
         <div className="hit-wrapper">
@@ -70,7 +73,7 @@ export default function SearchComponent({ name }) {
           <div>
             <ToastComponent />
             <Map />
-            {name === 'rent' ? <SortByRental /> : <SortBySale />}
+
           </div>
         </div>
         <div

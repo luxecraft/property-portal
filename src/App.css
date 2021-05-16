@@ -49,6 +49,9 @@ body {
 }
 
 .ais-SearchBox-input {
+  flex-grow: 6;
+  width: 50em;
+  margin-right: 5em;
   border-radius: 10px;
   border: none;
   height: 3em;
@@ -88,6 +91,12 @@ body {
   margin-bottom: 0.2em;
 }
 
+.search-sort {
+
+  width: 70em;
+  align-items: center;
+  display: flex;
+}
 
 /* HITS */
 
@@ -712,4 +721,14 @@ body {
 
 .about-youtube {
   text-align: center;
+}
+
+/* SORT BY BOX */
+
+.ais-SortBy-select {
+  padding-left: 1em;
+  height: 3em;
+  border: rgba(132, 132, 132, 0.142) solid 0.1px;
+  box-shadow:  10px 10px 30px -10px #d9d9d9,
+             -10px -10px 30px -10px #ffffff;
 }
