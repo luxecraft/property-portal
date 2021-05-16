@@ -32,7 +32,7 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Scale up to millions of records
 - Improving contact features
 - Making the web app responsive
-- Use search parameters like near me, within 5km randius
+- Use search parameters like near me, within 5km radius
 
 
 ## Hackathon Domain and Problem Statement
