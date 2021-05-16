@@ -18,6 +18,7 @@ import BhkFacet from './customized/BhkFacet';
 import GatedFacet from './customized/GatedFacet';
 import TypeFacet from './customized/TypeFacet';
 import SqrftFacet from './customized/SqrftFacet';
+import RatePerSqrftFacet from './customized/RatePerSqrftFacet';
 import PropTypes from 'prop-types';
 import ToastComponent from './customized/ToastComponent';
 
@@ -30,6 +31,10 @@ export default function SearchComponent() {
         <PriceFacet />
         <h4 className="sidebar-heading">Square Feet</h4>
         <SqrftFacet />
+        {/* <h4 className="sidebar-heading">
+          Rate per ft<sup>2</sup>
+        </h4>
+        <RatePerSqrftFacet /> */}
         <h4 className="sidebar-heading">BHK</h4>
         <BhkFacet />
         <h4 className="sidebar-heading">New/Old</h4>
