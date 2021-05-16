@@ -31,6 +31,8 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Suggestions based on current location
 - Scale up to millions of records
 - Improving contact features
+- Making the web app responsive
+- Use search parameters like near me, within 5km randius
 
 
 ## Hackathon Domain and Problem Statement
