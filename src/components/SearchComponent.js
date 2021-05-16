@@ -18,10 +18,12 @@ import BhkFacet from './customized/BhkFacet';
 import GatedFacet from './customized/GatedFacet';
 import TypeFacet from './customized/TypeFacet';
 import SqrftFacet from './customized/SqrftFacet';
+import SortByRental from './customized/SortByRental';
 import PropTypes from 'prop-types';
 import ToastComponent from './customized/ToastComponent';
+import SortBySale from './customized/SortyBySale';
 
-export default function SearchComponent() {
+export default function SearchComponent({ name }) {
   return (
     <div className="main-area">
       <div className="left-panel">
@@ -54,24 +56,25 @@ export default function SearchComponent() {
             placeholder: 'Type City, Street name, State, Project, Builder',
           }}
         />
-        <CustomStats />
-        <ListRefinements />
-        <div className="hit-wrapper">
-          <Hits className="hitList" hitComponent={Hit} />
-          <div>
-            <ToastComponent />
-            <Map />
-          </div>
+      </div>
+      <CustomStats />
+      <ListRefinements />
+      <div className="hit-wrapper">
+        <Hits className="hitList" hitComponent={Hit} />
+        <div>
+          <ToastComponent />
+          <Map />
+          {name === 'rent' ? <SortByRental /> : <SortBySale />}
         </div>
-        <div
-          className="pagination-wrapper"
-          onClick={() => {
-            console.log('object');
-            window.scrollTo(0, 0);
-          }}
-        >
-          <Pagination className="ais-Pagination" />
-        </div>
+      </div>
+      <div
+        className="pagination-wrapper"
+        onClick={() => {
+          console.log('object');
+          window.scrollTo(0, 0);
+        }}
+      >
+        <Pagination className="ais-Pagination" />
       </div>
     </div>
   );
