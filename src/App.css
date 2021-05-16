@@ -674,3 +674,26 @@ body {
 .about-head {
   font-weight: 700;
 }
+
+.about-note {
+  border-radius: 10px;
+  padding-left: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background-image: linear-gradient(to right, #ffa7606b , #ff5d8363);
+}
+
+.you-text {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffa760 , #ff5d83);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-youtube {
+  text-align: center;
+}

@@ -187,12 +187,12 @@ function Home() {
         </p>
 
 
-        <p className="about-note">
-          NOTE: The web app is not responsive yet. So please do test it using your laptop/desktop devices.
-        </p>
+        <div className="about-note">
+          <p><b>NOTE:</b> The web app is not responsive yet. So please do test it using your laptop/desktop devices.</p>
+        </div>
 
         <p className="about-youtube">
-          <a href="https://www.youtube.com/watch?v=eQM2VgYQIlc">Youtube Link</a>
+          <a className="you-text" href="https://www.youtube.com/watch?v=eQM2VgYQIlc">Youtube Link</a>
         </p>
       </div>
     </div>
