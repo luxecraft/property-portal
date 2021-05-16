@@ -18,10 +18,13 @@ import BhkFacet from './customized/BhkFacet';
 import GatedFacet from './customized/GatedFacet';
 import TypeFacet from './customized/TypeFacet';
 import SqrftFacet from './customized/SqrftFacet';
+import SortByRental from './customized/SortByRental';
 import PropTypes from 'prop-types';
 import ToastComponent from './customized/ToastComponent';
+import SortBySale from './customized/SortyBySale';
+import OngoingFacet from './customized/OngoingFacet';
 
-export default function SearchComponent() {
+export default function SearchComponent({ name }) {
   return (
     <div className="main-area">
       <div className="left-panel">
@@ -32,6 +35,12 @@ export default function SearchComponent() {
         <SqrftFacet />
         <h4 className="sidebar-heading">BHK</h4>
         <BhkFacet />
+        {name === 'sale' ? (
+          <div>
+            <h4 className="sidebar-heading">Status</h4>
+            <OngoingFacet />
+          </div>
+        ) : null}
         <h4 className="sidebar-heading">New/Old</h4>
         <NewFacet />
         <h4 className="sidebar-heading">Gated Community</h4>
@@ -45,15 +54,18 @@ export default function SearchComponent() {
         <Configure hitsPerPage={8} />
       </div>
       <div className="right-panel">
-        <SearchBox
-          submit={
-            <img className="icon" src="/images/icons/search.png" alt="" />
-          }
-          reset={<img className="icon" src="/images/icons/close.png" alt="" />}
-          translations={{
-            placeholder: 'Type City, Street name, State, Project, Builder',
-          }}
-        />
+        <div className="search-sort">
+          <SearchBox
+            submit={
+              <img className="icon" src="/images/icons/search.png" alt="" />
+            }
+            reset={<img className="icon" src="/images/icons/close.png" alt="" />}
+            translations={{
+              placeholder: 'Type City, Street name, State, Project, Builder',
+            }}
+          />
+          {name === 'rent' ? <SortByRental /> : <SortBySale />}
+        </div>
         <CustomStats />
         <ListRefinements />
         <div className="hit-wrapper">
@@ -61,6 +73,7 @@ export default function SearchComponent() {
           <div>
             <ToastComponent />
             <Map />
+
           </div>
         </div>
         <div

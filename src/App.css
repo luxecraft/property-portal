@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
 
 body {
   font-family: 'Jost', sans-serif;
@@ -49,6 +49,9 @@ body {
 }
 
 .ais-SearchBox-input {
+  flex-grow: 6;
+  width: 50em;
+  margin-right: 5em;
   border-radius: 10px;
   border: none;
   height: 3em;
@@ -88,6 +91,12 @@ body {
   margin-bottom: 0.2em;
 }
 
+.search-sort {
+
+  width: 70em;
+  align-items: center;
+  display: flex;
+}
 
 /* HITS */
 
@@ -236,12 +245,28 @@ body {
 
 
 .title-text {
+  
   font-weight: 700;
   font-family: 'Jost', sans-serif;
   font-size: 50px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding-left: 1em;
+}
+
+.title-link {
+  color: #111;
+  text-decoration: none;
+  transition: 300ms all ease;
+}
+
+.title-link:hover {
+  color: #111;
+  transition: 300ms all ease;
+  background: linear-gradient(to right, #ffa760 , #ff5d83);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navflex {
@@ -646,4 +671,81 @@ body {
 
 .toast-title {
   margin-bottom: 0em;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+.jumbotron-main {
+  height: 50vh;
+  background-image: linear-gradient(to right, #ffa760 , #ff5d83) !important;
+}
+
+.about-heading {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.content-1 {
+  font-size: 18px;
+  margin-top: 5em;
+  padding-left: 15em;
+  padding-right: 15em;
+}
+
+.about-head {
+  font-weight: 700;
+}
+
+.about-head-mini {
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.about-note {
+  border-radius: 10px;
+  padding-left: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background-image: linear-gradient(to right, #ffa7606b , #ff5d8363);
+}
+
+.gif-bar {
+  display: flex;
+}
+
+.gif-bar img {
+  border-radius: 20px;
+  margin-top: 2em;
+  margin-left: 5em;
+  height: 20em;
+}
+
+.you-text {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffa760 , #ff5d83);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-youtube {
+  text-align: center;
+}
+
+/* SORT BY BOX */
+
+.ais-SortBy-select {
+  padding-left: 1em;
+  height: 3em;
+  border: rgba(132, 132, 132, 0.142) solid 0.1px;
+  box-shadow:  10px 10px 30px -10px #d9d9d9,
+             -10px -10px 30px -10px #ffffff;
 }

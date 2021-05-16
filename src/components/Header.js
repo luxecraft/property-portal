@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [curentPage, setCurentPage] = useState(
     window.location.href.split('3000/')[1] ||
-      window.location.href.split('live/')[1] ||
-      window.location.href.split('app/')[1]
+    window.location.href.split('live/')[1] ||
+    window.location.href.split('app/')[1]
   );
 
   console.log(window.location.href.split('3001/')[1]);
@@ -15,7 +16,7 @@ function Header() {
 
   return (
     <div className="header-main">
-      <h2 className="title-text">Property Portal</h2>
+      <h2 className="title-text" ><Link to="/" className="title-link">Property Portal</Link></h2>
       <div className="navbarr">
         <a
           className={
@@ -38,6 +39,7 @@ function Header() {
           className="github-icon"
           href="https://github.com/HarisaranG/property-portal-hackathon"
           target="_blank"
+          rel="noopener"
         >
           <img height="40em" src="images/icons/github.png" />
         </a>
