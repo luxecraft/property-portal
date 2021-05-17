@@ -40,16 +40,24 @@ function Header() {
         >
           Sale
         </Link>
-
-        <a
-          className="github-icon"
-          href="https://github.com/HarisaranG/property-portal-hackathon"
-          target="_blank"
-          rel="noopener"
-        >
-          <img height="40em" src="images/icons/github.png" />
-        </a>
       </div>
+      <a
+        className="youtube-icon"
+        href="https://www.youtube.com/watch?v=eQM2VgYQIlc"
+        target="_blank"
+        rel="noopener"
+      >
+        <img height="40em" src="images/icons/youtube.png" />
+      </a>
+
+      <a
+        className="github-icon"
+        href="https://github.com/HarisaranG/property-portal-hackathon"
+        target="_blank"
+        rel="noopener"
+      >
+        <img height="40em" src="images/icons/github.png" />
+      </a>
     </div>
   );
 }
