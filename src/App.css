@@ -714,16 +714,19 @@ body {
   font-weight: 500;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 20px;
 }
 
 .about-note {
   border-radius: 10px;
-  padding-left: 0.5em;
-  padding-top: 0.8em;
+  padding-left: 2em;
+  padding-top: 1em;
   padding-bottom: 0.1em;
   margin-bottom: 2em;
   margin-top: 2em;
   background-image: linear-gradient(to right, #ffa7606b , #ff5d8363);
+  box-shadow:  10px 10px 40px  #d9d9d9c0,
+             -10px -10px 40px  #ffffffc0;
 }
 
 .gif-bar {
@@ -735,20 +738,10 @@ body {
   margin-top: 2em;
   margin-left: 5em;
   height: 20em;
+  box-shadow:  20px 20px 60px  #d9d9d9,
+             -20px -20px 60px  #ffffff;
 }
 
-.you-text {
-  font-size: 30px;
-  font-weight: 700;
-  background: linear-gradient(to right, #ffa760 , #ff5d83);
-  text-decoration: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about-youtube {
-  text-align: center;
-}
 
 /* SORT BY BOX */
 

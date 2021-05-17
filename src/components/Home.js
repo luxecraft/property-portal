@@ -7,26 +7,6 @@ function Home() {
         <h1 className="about-heading">About our Project</h1>
       </div>
       <div className="content-1">
-        <p className="about-desc">
-          This project is a submission for Ease the Error 2.0 Hackathon
-        </p>
-
-        <h4 className="about-head">
-          Team Members Details
-        </h4>
-
-        <p className="about-desc">
-          The project was developed by:
-          <ul>
-            <li>
-              Harisaran G 2nd Year IT - Sri Sivasubramaniya Nadar College of Engineering
-            </li>
-            <li>
-              Sabesh Bharathi K 2nd Year IT - Sri Sivasubramaniya Nadar College of Engineering
-            </li>
-          </ul>
-        </p>
-
 
         <div className="gif-bar">
           <div>
@@ -84,16 +64,6 @@ function Home() {
           </div>
           <img src="https://propertyportal.s3.ap-south-1.amazonaws.com/images/geosearch.gif" alt="gif" />
         </div>
-
-        <h4 className="about-head">
-          Hackathon Domain and Problem Statement
-        </h4>
-
-        <p className="about-desc">
-          The hackathon domain is implementing a super-fast search portal for real estate.
-          The problem statement is:
-          House Search suggestions based on current configuration and available goods
-        </p>
 
         <h4 className="about-head">
           Tech Stack
@@ -176,35 +146,10 @@ function Home() {
           </ul>
         </p>
 
-        <h4 className="about-head">
-          Components not created at the hackathon
-        </h4>
-
-        <p className="about-desc">
-          <ul>
-            <li>
-              Reusable CSS classes
-            </li>
-            <li>
-              Reusable react-instantsearch elements
-            </li>
-            <li>
-              EC2 server config files
-            </li>
-            <li>
-              Predownloaded image assets
-            </li>
-          </ul>
-        </p>
-
-
         <div className="about-note">
           <p><b>NOTE:</b> The web app is not responsive yet. So please do test it using your laptop/desktop devices.</p>
         </div>
 
-        <p className="about-youtube">
-          <a className="you-text" href="https://www.youtube.com/watch?v=eQM2VgYQIlc" target="_blank" rel="noopener">Youtube Link</a>
-        </p>
       </div>
     </div>
   );
