@@ -4,13 +4,8 @@
 ![GitHub commit checks state](https://img.shields.io/github/checks-status/HarisaranG/property-portal-hackathon/eeb786091b3a4f8ca19b38f4f218dacb28d070d3?logoColor=green)
 ![GitHub](https://img.shields.io/github/license/HarisaranG/property-portal-hackathon?logoColor=orange)
 
-This project is a submission for Ease the Error 2.0 Hackathon
+![Screenshot](https://propertyportal.s3.ap-south-1.amazonaws.com/images/property-portal.png)
 
-## Team Members Details
-
-The project was developed by:
-- Harisaran G 2nd Year IT - Sri Sivasubramaniya Nadar College of Engineering 
-- Sabesh Bharathi K 2nd Year IT - Sri Sivasubramaniya Nadar College of Engineering 
 
 ## Project Abstract
 
@@ -34,14 +29,6 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Making the web app responsive
 - Use search parameters like near me, within 5km radius
 
-
-## Hackathon Domain and Problem Statement
-
-The hackathon domain is implementing a super-fast search portal for real estate.
-
-The problem statement is:
-`House Search suggestions based on current configuration and available goods`
-
 ## Tech Stack
 
 - Typesense
@@ -52,7 +39,6 @@ The problem statement is:
 - AWS Lambda
 - ReactJS
 - Bootstrap 
-
 
 ## SDKs and APIs used
 
@@ -69,13 +55,6 @@ The problem statement is:
 - Open source CSS libraries
 - Neumorphic design schemes
 - Custom designed buttons and favicons
-
-## Components not created at the hackathon
-
-- Reusable CSS classes
-- Reusable react-instantsearch elements
-- EC2 server config files
-- Predownloaded image assets
 
 > **_NOTE:_** The web app is not responsive yet. So please do test it using your laptop/desktop devices.
 
