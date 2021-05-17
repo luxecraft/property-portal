@@ -364,8 +364,7 @@ body {
 }
 
 .footer-text-bottom {
-  position: relative;
-  top: 13em;
+
   font-family: 'Jost', sans-serif;
 }
 
@@ -759,4 +758,19 @@ body {
   border: rgba(132, 132, 132, 0.142) solid 0.1px;
   box-shadow:  10px 10px 30px -10px #d9d9d9,
              -10px -10px 30px -10px #ffffff;
+}
+
+
+/* MEMOJI */
+
+.memoji-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.memoji {
+  height: 10em;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
 }
