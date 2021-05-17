@@ -254,7 +254,7 @@ body {
   font-size: 50px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  padding-left: 1em;
+  margin-left: 0.6em;
 }
 
 .title-link {
@@ -281,6 +281,7 @@ body {
 
 .header-main {
   display: flex;
+  align-items: center;
 }
 
 .navbarr {
@@ -288,7 +289,7 @@ body {
   margin: auto;
   margin-left: 8em;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0;
   max-width: 13em;
   box-shadow:  10px 10px 20px #d9d9d99d,
@@ -643,7 +644,14 @@ body {
 }
 
 .github-icon {
-  margin-left: 38em;
+  float: right;
+  margin-right: 3.5em;
+}
+
+.youtube-icon {
+  float: right;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 
