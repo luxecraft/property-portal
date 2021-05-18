@@ -656,7 +656,20 @@ body {
 
 /* Toast */
 
+.toast {
+  border: 0px !important;
+  border-radius: 20px !important;
+
+  box-shadow:  5px 5px 20px  #d9d9d9ce,
+             -5px -5px 20px  #ffffffce !important;
+}
+
+.toast-header {
+  border-radius: 20px !important;
+}
+
 .toast-comp {
+  border-radius: 20px !important;
   margin-top: -2em;
   padding-left: 2em;
   margin-bottom: -2em;
@@ -766,4 +779,22 @@ body {
   height: 10em;
   margin-left: -1.5em;
   margin-right: -1.5em;
+}
+
+
+/* HOTKEYS */
+
+.search-hotkeys {
+  position: absolute;
+  display: flex;
+  left: 58em;
+}
+
+.search-hotkeys img {
+  height: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  -webkit-filter: drop-shadow(0px 2px 5px rgba(34, 34, 34, 0.163));
+  filter: drop-shadow(0px 2px 5px rgba(34, 34, 34, 0.163));
+
 }

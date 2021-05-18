@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Hits,
   SearchBox,
@@ -25,6 +25,49 @@ import SortBySale from './customized/SortyBySale';
 import OngoingFacet from './customized/OngoingFacet';
 
 export default function SearchComponent({ name }) {
+
+  const [currentOS, setCurrentOS] = useState('Windows')
+
+  const [isSearchActive, setIsSearchActive] = useState(true)
+
+  const getOS = () => {
+    if (navigator.appVersion.indexOf("Mac") != -1) {
+      setCurrentOS('macOS')
+    }
+  }
+
+  let keysPressed = {};
+
+  useEffect(() => {
+
+    getOS()
+
+    document.addEventListener('click', (event) => {
+      if (document.activeElement != document.getElementsByClassName('ais-SearchBox-input')[0]) {
+        setIsSearchActive(true)
+      }
+      else {
+        setIsSearchActive(false)
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      keysPressed[event.key] = true;
+
+      if ((keysPressed['Meta'] || keysPressed['Control']) && event.key == 'k') {
+        event.preventDefault()
+        document.getElementsByClassName('ais-SearchBox-input')[0].focus()
+        setIsSearchActive(false)
+        return false;
+      }
+    });
+
+    document.addEventListener('keyup', (event) => {
+      delete keysPressed[event.key];
+    });
+
+  }, [])
+
   return (
     <div className="main-area">
       <div className="left-panel">
@@ -64,6 +107,17 @@ export default function SearchComponent({ name }) {
               placeholder: 'Type City, Street name, State, Project, Builder',
             }}
           />
+          {
+            (isSearchActive) ?
+              <div className="search-hotkeys">
+
+                <>
+                  <img src={(currentOS == "Windows") ? "images/icons/ctrl.png" : "images/icons/cmd.png"} alt="hotkey" />
+                  <img src="images/icons/k.png" alt="hotkey" />
+                </>
+
+              </div> : null
+          }
           {name === 'rent' ? <SortByRental /> : <SortBySale />}
         </div>
         <CustomStats />
