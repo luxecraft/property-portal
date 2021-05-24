@@ -38,14 +38,16 @@ const KendoIcons = () => {
     </div>
     <style>{`
                 [name='logo-github'] {
-                  padding-top: 30px;
-                  font-size: 30px;
+                  padding-top: 28px;
+                  font-size: 35px;
                   color: #25832d;
                 }
 
                 .social-icons .icon,
                 .social-icons .icon:before,
-                .social-icons .icon .k-icon {
+                .social-icons .icon .k-icon,
+                .social-icons .icon [name='logo-github']
+                 {
                   cursor: pointer;
                   -webkit-transition: all 0.35s;
                   transition: all 0.35s;
@@ -56,7 +58,8 @@ const KendoIcons = () => {
                   top: 90%;
                   left: -110%;
                 }
-                .social-icons .icon .k-icon {
+                .social-icons .icon .k-icon,
+                .social-icons .icon [name='logo-github'] {
                   -webkit-transform: scale(0.8);
                           transform: scale(0.8);
                 }
@@ -91,6 +94,12 @@ const KendoIcons = () => {
                   -webkit-transform: scale(1);
                           transform: scale(1);
                 }
+
+                .social-icons .icon:hover [name='logo-github'] {
+                  fill: #fff;
+                  -webkit-transform: scale(1);
+                          transform: scale(1);
+                } 
                 .social-icons .icon {
                   display: inline-block;
                   background-color: #fff;
