@@ -3,6 +3,7 @@ import { Highlight } from 'react-instantsearch-dom';
 import PropTypes from 'prop-types';
 import priceFormatter from '../PriceFormatter';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const imagesDirectory = 'images/';
 function Hit(props) {
@@ -26,8 +27,8 @@ function Hit(props) {
   }
 
   return (
-    <div onClick={() => sendProps(props.hit)}>
-      <div className="overlay-container">
+    <div>
+      <div className="overlay-container" onClick={() => sendProps(props.hit)}>
         <img
           className="hit-image"
           src={imagesDirectory + props.hit.image_url.split('/images/')[1]}
@@ -41,14 +42,14 @@ function Hit(props) {
         ) : null}
       </div>
 
-      <div className="hit-name">
+      <div className="hit-name" onClick={() => sendProps(props.hit)}>
         <Highlight attribute="project_name" hit={props.hit}>
           {props.hit.project_name}
         </Highlight>
       </div>
 
       <div className="hit-price-city">
-        <div className="location-bar">
+        <div className="location-bar" onClick={() => sendProps(props.hit)}>
           <img
             className="location-marker"
             src="images/icons/location.png"
@@ -67,14 +68,14 @@ function Hit(props) {
             </p>
           </p>
         </div>
+
         <div>
-          <button type="button" class="btn btn-success">
-            <a className="unstyled" href={'tel:' + props.hit.phone}>
-              Contact
-            </a>
-          </button>
-          <p className="hit-price">₹{priceFormatter(props.hit.price)}</p>
+          <Link className="unstyled btn btn-success" to="/contact">
+            Contact
+          </Link>
+          <p className="hit-price" onClick={() => sendProps(props.hit)}>₹{priceFormatter(props.hit.price)}</p>
         </div>
+
       </div>
     </div>
   );

@@ -112,8 +112,8 @@ export default function SearchComponent({ name }) {
               <div className="search-hotkeys">
 
                 <>
-                  <img src={(currentOS == "Windows") ? "images/icons/ctrl.png" : "images/icons/cmd.png"} alt="hotkey" />
-                  <img src="images/icons/k.png" alt="hotkey" />
+                  <img src={(currentOS == "Windows") ? "images/icons/ctrl.svg" : "images/icons/cmd.svg"} alt="hotkey" />
+                  <img src="images/icons/k.svg" alt="hotkey" />
                 </>
 
               </div> : null

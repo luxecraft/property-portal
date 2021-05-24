@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import KendoIcons from './customized/KendoIcons';
 
 function Header() {
   const [curentPage, setCurentPage] = useState(
@@ -41,23 +42,9 @@ function Header() {
           Sale
         </Link>
       </div>
-      <a
-        className="youtube-icon"
-        href="https://www.youtube.com/watch?v=eQM2VgYQIlc"
-        target="_blank"
-        rel="noopener"
-      >
-        <img height="40em" src="images/icons/youtube.png" />
-      </a>
 
-      <a
-        className="github-icon"
-        href="https://github.com/HarisaranG/property-portal-hackathon"
-        target="_blank"
-        rel="noopener"
-      >
-        <img height="40em" src="images/icons/github.png" />
-      </a>
+      <div className="ico-wrapper"><KendoIcons /></div>
+
     </div>
   );
 }
