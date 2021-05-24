@@ -2015,6 +2015,19 @@
   dependencies:
     jsonwebtoken "^8.5.1"
 
+"@progress/kendo-react-common@^4.6.0":
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-4.6.0.tgz#832be850c1c3f911cea112622aaf2e518721319b"
+  integrity sha512-qB7p/GNJaXMecs/qEH+OzeIwJf0NoRNh3CzmQyyurSwvIiV79gpkSxdnxzTr30xWVm525Nvj3ZemJbT4nu8r9w==
+  dependencies:
+    "@telerik/kendo-draggable" "^2.2.1"
+    prop-types "^15.6.0"
+
+"@progress/kendo-theme-bootstrap@^4.35.1":
+  version "4.35.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-theme-bootstrap/-/kendo-theme-bootstrap-4.35.1.tgz#fae6262053cddf6a472f2c5c71ec953583046a8b"
+  integrity sha512-lq2edhCLcqUSJP0XPUYHMFr3rgtvwFQpxSuF1zUi1gzTR1ty0x37lY3ZkayRhFXnp+BwflKxcO1VqyUq17Ng2w==
+
 "@svgr/core@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@svgr/core/-/core-2.4.1.tgz"
@@ -2039,6 +2052,11 @@
     "@babel/preset-react" "^7.0.0"
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
+
+"@telerik/kendo-draggable@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.2.1.tgz#27d86fd5b3273676b744bd82dbcebfffd911ad5c"
+  integrity sha512-qmuRJnjByOIjSKi0BKYK7fJ/+ITgL0aumc4IRIEwiYAQgDJWumuSpAOp2p8ctIWzP0JfEUmITs6ziJaoyKIYwQ==
 
 "@types/node@^14.0.23":
   version "14.17.0"
@@ -9647,7 +9665,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==

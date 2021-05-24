@@ -18,6 +18,8 @@
     "@iconify/icons-mdi": "^1.1.15",
     "@iconify/react": "^1.1.4",
     "@progress/kendo-licensing": "^1.1.4",
+    "@progress/kendo-react-common": "^4.6.0",
+    "@progress/kendo-theme-bootstrap": "^4.35.1",
     "algoliasearch": "3.35.1",
     "bootstrap": "^5.0.1",
     "dotenv": "^10.0.0",
