@@ -14,7 +14,7 @@ function Home() {
               Project Abstract
           </h4>
             <p className="about-desc project-abstract">
-              This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through lakhs of records (in this case, over 2 Lakh records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
+              This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through hundreds of thousands of records (in this case, over 200k records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
 
             <h6 className="about-head-mini">
                 Features
@@ -34,7 +34,7 @@ function Home() {
                   Typo Tolerant
               </li>
                 <li>
-                  Indexes lakhs of records
+                  Indexes upto 200k records
               </li>
               </ul>
 
@@ -93,6 +93,12 @@ function Home() {
               ReactJS
             </li>
             <li>
+              Kendo React Form
+            </li>
+            <li>
+              Kendo React Icons
+            </li>
+            <li>
               Bootstrap
             </li>
           </ul>
@@ -117,7 +123,10 @@ function Home() {
               Faker - python library
             </li>
             <li>
-              Reactstrap - npm package
+              Kendo Utils
+            </li>
+            <li>
+              AWS SNS
             </li>
             <li>
               React Instantsearch
