@@ -11,10 +11,16 @@
     "typesenseServer": "sudo docker run -i -p 8109:8109 -v/tmp/typesense-server-data/:/data typesense/typesense:geo-12-may-1 --data-dir /data --api-key=xyz --listen-port 8109 --enable-cors"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.3.0",
+    "@aws-sdk/client-sns": "^3.16.0",
+    "@aws-sdk/node-http-handler": "^3.3.0",
+    "@aws-sdk/types": "^3.3.0",
     "@iconify/icons-mdi": "^1.1.15",
     "@iconify/react": "^1.1.4",
+    "@progress/kendo-licensing": "^1.1.4",
     "algoliasearch": "3.35.1",
     "bootstrap": "^5.0.1",
+    "dotenv": "^10.0.0",
     "google-map-react": "^2.1.9",
     "react": "16.12.0",
     "react-dom": "16.12.0",
@@ -25,9 +31,11 @@
     "react-scripts": "2.1.1",
     "reactstrap": "^8.9.0",
     "rheostat": "4",
+    "ts-node": "^9.0.0",
     "typesense-instantsearch-adapter": "typesense/typesense-instantsearch-adapter#geo-search"
   },
   "devDependencies": {
+    "@types/node": "^14.0.23",
     "eslint": "5.12.0",
     "eslint-config-algolia": "13.2.3",
     "eslint-config-prettier": "3.6.0",
@@ -35,7 +43,8 @@
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.17.0",
     "prettier": "1.19.1",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "typescript": "^4.0.2"
   },
   "browserslist": [
     ">0.2%",
