@@ -11,7 +11,6 @@
     "typesenseServer": "sudo docker run -i -p 8109:8109 -v/tmp/typesense-server-data/:/data typesense/typesense:geo-12-may-1 --data-dir /data --api-key=xyz --listen-port 8109 --enable-cors"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.3.0",
     "@aws-sdk/client-sns": "^3.16.0",
     "@aws-sdk/node-http-handler": "^3.3.0",
     "@aws-sdk/types": "^3.3.0",
@@ -26,6 +25,7 @@
     "@progress/kendo-react-labels": "^4.6.0",
     "@progress/kendo-theme-bootstrap": "^4.35.1",
     "algoliasearch": "3.35.1",
+    "aws-sdk": "^2.912.0",
     "bootstrap": "^5.0.1",
     "dotenv": "^10.0.0",
     "google-map-react": "^2.1.9",
