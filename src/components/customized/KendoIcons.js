@@ -6,7 +6,7 @@ const KendoIcons = () => {
     <div className='text-center social-icons'>
 
       <a
-        href="https://twitter.com/Harisaran_g"
+        href="https://twitter.com/sabeshbharathi"
         target="_blank"
         rel="noopener"
       >

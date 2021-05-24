@@ -38,6 +38,7 @@
     "react-scripts": "2.1.1",
     "reactstrap": "^8.9.0",
     "rheostat": "4",
+    "sweetalert2": "^11.0.11",
     "ts-node": "^9.0.0",
     "typesense-instantsearch-adapter": "typesense/typesense-instantsearch-adapter#geo-search"
   },

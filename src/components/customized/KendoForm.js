@@ -4,6 +4,7 @@ import { Form, Field, FormElement } from '@progress/kendo-react-form';
 import { Error } from '@progress/kendo-react-labels';
 import { Input, TextArea } from '@progress/kendo-react-inputs';
 import PostContact from '../SnsCall';
+import Swal from 'sweetalert2';
 
 const emailRegex = new RegExp(/\S+@\S+\.\S+/);
 const emailValidator = (value) => (emailRegex.test(value) ? "" : "Please enter a valid email.");
@@ -23,6 +24,12 @@ const KendoForm = () => {
   const handleSubmit = (dataItem) => {
     if (dataItem != null)
       PostContact(dataItem);
+
+    Swal.fire(
+      'Success!',
+      'Your message has been sent successfully!',
+      'success'
+    )
   };
   return (
     <Form
@@ -30,7 +37,7 @@ const KendoForm = () => {
       render={(formRenderProps) => (
         <FormElement style={{ maxWidth: 650 }}>
           <fieldset className={'k-form-fieldset'}>
-            <h2 className="text-center">Contact Us</h2>
+            <h2 className="text-center">Contact Form</h2>
             <div className="mb-3">
               <Field name={'name'} component={Input} label={'Name'} />
             </div>
