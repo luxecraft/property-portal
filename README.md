@@ -25,16 +25,17 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - User personalization
 - Suggestions based on current location
 - Scale up to millions of records
-- Improving contact features
 - Making the web app responsive
 - Use search parameters like near me, within 5km radius
 
 ## Tech Stack
 
+- Kendo React
 - Typesense
-- Typesense client + Instantsearch
+- React Instantsearch
 - AWS DynamoDB
 - AWS EC2
+- AWS SNS
 - AWS S3
 - AWS Lambda
 - ReactJS
