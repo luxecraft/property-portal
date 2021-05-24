@@ -43,6 +43,15 @@ function Header() {
         </Link>
       </div>
 
+      <Link
+        to="/contact"
+        className="link"
+      >
+        <div className="contact-btn">
+          Contact Us
+        </div>
+      </Link>
+
       <div className="ico-wrapper"><KendoIcons /></div>
 
     </div>

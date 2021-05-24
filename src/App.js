@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PropertyDetailsComponent from "./components/pages/PropertyDetailsComponent";
 import { AnimatedSwitch } from 'react-router-transition';
 import '@progress/kendo-theme-bootstrap/dist/all.css';
+import ContactUs from "./components/pages/ContactUs";
+require('dotenv').config()
 
 export default function App() {
   return (
@@ -30,6 +32,9 @@ export default function App() {
           </Route>
           <Route exact path="/sale">
             <SaleComponent />
+          </Route>
+          <Route exact path="/contact">
+            <ContactUs />
           </Route>
           <Route path="/property-details" render={(props) => <PropertyDetailsComponent {...props} />} />
         </AnimatedSwitch>
