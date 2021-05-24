@@ -26,7 +26,7 @@ const KendoIcons = () => {
       </a>
 
       <a
-        href="https://www.youtube.com/watch?v=eQM2VgYQIlc"
+        href="https://www.youtube.com/watch?v=hPc1W4SeKMA"
         target="_blank"
         rel="noopener"
       >
