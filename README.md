@@ -9,7 +9,7 @@
 
 ## Project Abstract
 
-This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through lakhs of records (in this case, over 2 Lakh records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
+This project aimed to deliver blazing fast search results, even on applying multiple search filters and tough queries. It makes the cumbersome process of searching, seamless and magical. It can be used to search through hundreds of thousands of records (in this case, over 200k records) within a fraction of a second. We wanted to provide the users with an innovative and super-fast way to search through properties, so we implemented geo search to enable users to search as they scroll on a map. This, combined with the robust filtering engine, our web app, is a powerful tool.
 
 ### Features
 
@@ -18,7 +18,7 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Search as you type
 - Search as you scroll the map
 - Typo Tolerant
-- Indexes lakhs of records
+- Indexes upto 200k records
 
 ### Potential Features (in the future)
 
@@ -26,7 +26,7 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Suggestions based on current location
 - Scale up to millions of records
 - Making the web app responsive
-- Use search parameters like near me, within 5km radius
+- Use search parameters like near me, within a 5 km radius
 
 ## Tech Stack
 
@@ -60,4 +60,4 @@ This project aimed to deliver blazing fast search results, even on applying mult
 > **_NOTE:_** The web app is not responsive yet. So please do test it using your laptop/desktop devices.
 
 
-[Youtube Link](https://www.youtube.com/watch?v=eQM2VgYQIlc)
+[Youtube Link](https://www.youtube.com/watch?v=hPc1W4SeKMA)
