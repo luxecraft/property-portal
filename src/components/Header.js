@@ -47,7 +47,7 @@ function Header() {
         target="_blank"
         rel="noopener"
       >
-        <img height="40em" src="images/icons/youtube.png" />
+        <img src="images/icons/youtube.png" />
       </a>
 
       <a
@@ -56,7 +56,7 @@ function Header() {
         target="_blank"
         rel="noopener"
       >
-        <img height="40em" src="images/icons/github.png" />
+        <img src="images/icons/github.png" />
       </a>
     </div>
   );

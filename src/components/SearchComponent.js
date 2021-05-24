@@ -94,8 +94,9 @@ export default function SearchComponent({ name }) {
         <FacetListAmenities />
         <h4 className="sidebar-heading">Extra Amenities</h4>
         <FacetListAmenitiesExtra />
-        <Configure hitsPerPage={8} />
+        <Configure hitsPerPage={6} />
       </div>
+
       <div className="right-panel">
         <div className="search-sort">
           <SearchBox
@@ -124,10 +125,9 @@ export default function SearchComponent({ name }) {
         <ListRefinements />
         <div className="hit-wrapper">
           <Hits className="hitList" hitComponent={Hit} />
-          <div>
+          <div className="mapSide">
             <ToastComponent />
             <Map />
-
           </div>
         </div>
         <div

@@ -26,7 +26,7 @@ function Hit(props) {
   }
 
   return (
-    <div onClick={() => sendProps(props.hit)}>
+    <div className="each-hit" onClick={() => sendProps(props.hit)}>
       <div className="overlay-container">
         <img
           className="hit-image"
@@ -35,45 +35,53 @@ function Hit(props) {
         />
 
         {props.hit.construction_status != null ? (
-          <div class="overlay">
-            {props.hit.construction_status != true ? 'Completed' : 'On-Going'}
+          <div class="overlay-wrapper">
+            <div class="overlay">
+              {props.hit.construction_status != true ? 'Completed' : 'On-Going'}
+            </div>
           </div>
         ) : null}
       </div>
 
-      <div className="hit-name">
-        <Highlight attribute="project_name" hit={props.hit}>
-          {props.hit.project_name}
-        </Highlight>
-      </div>
-
-      <div className="hit-price-city">
-        <div className="location-bar">
-          <img
-            className="location-marker"
-            src="images/icons/location.png"
-            alt="Location Marker"
-          />
-          <p className="hit-city">
-            <Highlight attribute="street_name" hit={props.hit}>
-              {props.hit.street_name}
-            </Highlight>
-            <br />
-            <Highlight attribute="city_facet" hit={props.hit}>
-              {props.hit.city_facet}
-            </Highlight>
-            <p className="sqrft-bhk">
-              {props.hit.sqrft} ft<sup>2</sup> - {props.hit.bhk_facet} BHK
-            </p>
-          </p>
+      <div className="hit-details">
+        <div className="hit-name">
+          <Highlight attribute="project_name" hit={props.hit}>
+            {props.hit.project_name}
+          </Highlight>
         </div>
+
+        <p className="hit-city">
+          <Highlight attribute="street_name" hit={props.hit}>
+            {props.hit.street_name}
+          </Highlight>
+          ,
+          <br />
+          <Highlight attribute="city_facet" hit={props.hit}>
+            {props.hit.city_facet}
+          </Highlight>
+          ,
+          <br />
+          <Highlight attribute="state_facet" hit={props.hit}>
+            {props.hit.state_facet}
+          </Highlight>
+        </p>
+
+        <p className="sqrft-bhk">
+          {props.hit.sqrft} ft<sup>2</sup> - {props.hit.bhk_facet} BHK
+        </p>
+        <p className="builder-name">
+          {props.hit.builder_name}
+        </p>
+
+
+        <p className="hit-price">₹{priceFormatter(props.hit.price)}</p>
+
         <div>
           <button type="button" class="btn btn-success">
             <a className="unstyled" href={'tel:' + props.hit.phone}>
               Contact
             </a>
           </button>
-          <p className="hit-price">₹{priceFormatter(props.hit.price)}</p>
         </div>
       </div>
     </div>
