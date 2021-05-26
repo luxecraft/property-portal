@@ -1,8 +1,9 @@
-import React from "react";
-import CustomRangeInput from "./CustomRangeInput";
+import React from 'react';
+import { RangeInput } from 'react-instantsearch-dom';
+import CustomRangeInput from './CustomRangeInput';
 
 function PriceFacet() {
-  return <CustomRangeInput attribute="price" />;
+  return <RangeInput attribute="price" />;
 }
 
-export default PriceFacet; 
+export default PriceFacet;
