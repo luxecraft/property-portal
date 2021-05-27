@@ -396,6 +396,7 @@ body {
 	-o-background-image: linear-gradient(to right, #ffa760 , #ff5d83);
   background-image: linear-gradient(to right, #ffa760 , #ff5d83);
   width: 100%;
+  border-radius: 20px !important;
 }
 
 .DefaultProgressBar_progressBar {
