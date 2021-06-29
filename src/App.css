@@ -396,6 +396,7 @@ body {
 	-o-background-image: linear-gradient(to right, #ffa760 , #ff5d83);
   background-image: linear-gradient(to right, #ffa760 , #ff5d83);
   width: 100%;
+  border-radius: 20px !important;
 }
 
 .DefaultProgressBar_progressBar {
@@ -431,22 +432,39 @@ body {
   color: rgb(64, 28, 22);
 }
 
+.ais-RangeInput-form {
+  display: block;
+}
 
-.range-box {
+.ais-RangeInput-separator {
+  margin: 0 48%;
+}
+
+.ais-RangeInput-input {
+  height: 2em;
   border-radius: 10px;
   border: solid #d9d9d94d 1px;
   box-shadow:  5px 5px 20px -8px #d9d9d9;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   width: 100%;
+  padding-left: 0.3em;
 }
 
-.range-box::placeholder {
-  padding-left: 0.7em;
+.ais-RangeInput-input::placeholder {
+  padding-left: 0.3em;
 }
 
-.to-text {
-  text-align: center;
+.ais-RangeInput-submit {
+  margin: 1.5em 0;
+  font-size: 12px !important;
+  width: 100%;
+  border: none !important;
+  background-image: linear-gradient(to right, #ffa760 , #ff5d83) !important;
+  border-radius: 20px !important;
+
+  box-shadow:  5px 5px 20px -10px #afafaf,
+             -5px -5px 20px -10px #a8a8a8 !important;
 }
 
 .btn-success {
@@ -461,6 +479,7 @@ body {
   box-shadow:  5px 5px 20px -10px #afafaf,
              -5px -5px 20px -10px #a8a8a8 !important;
 }
+
 
 .overlay-container {
   position: relative;
@@ -863,3 +882,5 @@ body {
 .submit-btn-wrapper {
   margin: auto;
 }
+
+
