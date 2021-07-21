@@ -51,7 +51,6 @@ function Home() {
 
         <p className="about-desc">
           <ul>
-            <li>Kendo React</li>
             <li>Typesense</li>
             <li>React Instantsearch</li>
             <li>AWS DynamoDB</li>

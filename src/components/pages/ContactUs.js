@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import KendoForm from '../customized/KendoForm'
 
 export default function ContactUs() {
   return (
@@ -35,7 +34,7 @@ export default function ContactUs() {
           </svg>
         </span>
       </Link>
-      <KendoForm />
+      {/* <KendoForm /> */}
       <br /><br /><br />
     </div>
   )

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import KendoIcons from './customized/KendoIcons';
 
 function Header() {
   const [curentPage, setCurentPage] = useState(
     window.location.href.split('3000/')[1] ||
-      window.location.href.split('live/')[1] ||
-      window.location.href.split('app/')[1] ||
-      window.location.href.split('codes/')[1]
+    window.location.href.split('live/')[1] ||
+    window.location.href.split('app/')[1] ||
+    window.location.href.split('codes/')[1]
   );
 
   const [trigger, setTrigger] = useState(false);
@@ -15,9 +14,9 @@ function Header() {
   useEffect(() => {
     setCurentPage(
       window.location.href.split('3000/')[1] ||
-        window.location.href.split('live/')[1] ||
-        window.location.href.split('app/')[1] ||
-        window.location.href.split('codes/')[1]
+      window.location.href.split('live/')[1] ||
+      window.location.href.split('app/')[1] ||
+      window.location.href.split('codes/')[1]
     );
   }, [trigger]);
 
@@ -50,7 +49,7 @@ function Header() {
       </div>
 
       <div className="ico-wrapper">
-        <KendoIcons />
+        {/* <KendoIcons /> */}
       </div>
     </div>
   );
