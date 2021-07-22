@@ -663,15 +663,21 @@ body {
 
 .github-icon {
   float: right;
-  margin-right: 3.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 .youtube-icon {
   float: right;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
+.twitter-icon {
+  float: right;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
 
 /* Toast */
 

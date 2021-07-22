@@ -9,7 +9,6 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropertyDetailsComponent from "./components/pages/PropertyDetailsComponent";
 import { AnimatedSwitch } from 'react-router-transition';
-import '@progress/kendo-theme-bootstrap/dist/all.css';
 import ContactUs from "./components/pages/ContactUs";
 require('dotenv').config()
 

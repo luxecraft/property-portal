@@ -28,7 +28,6 @@ This project aimed to deliver blazing fast search results, even on applying mult
 
 ## Tech Stack
 
-- Kendo React
 - Typesense
 - React Instantsearch
 - AWS DynamoDB
