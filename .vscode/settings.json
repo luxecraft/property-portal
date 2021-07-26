@@ -1,7 +1,0 @@
-{
-    "compile-hero.disable-compile-files-on-did-save-code": true,
-    "editor.fastScrollSensitivity": 6,
-    "prettier.eslintIntegration": true,
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2
-}
