@@ -17,7 +17,8 @@ function Header() {
       window.location.href.split('3000/')[1] ||
       window.location.href.split('live/')[1] ||
       window.location.href.split('app/')[1] ||
-      window.location.href.split('codes/')[1]
+      window.location.href.split('codes/')[1] ||
+      window.location.href.split('org/')[1]
     );
   }, [trigger]);
 
