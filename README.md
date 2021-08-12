@@ -4,6 +4,7 @@
 ![GitHub commit checks state](https://img.shields.io/github/checks-status/HarisaranG/property-portal-hackathon/eeb786091b3a4f8ca19b38f4f218dacb28d070d3?logoColor=green)
 ![GitHub](https://img.shields.io/github/license/HarisaranG/property-portal-hackathon?logoColor=orange)
 
+[![Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com/?utm_soure=luxecraft&utm_campaign=oss)
 
 ## Project Abstract
 
@@ -55,7 +56,5 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - Custom designed buttons and favicons
 
 > **_NOTE:_** The web app is not responsive yet. So please do test it using your laptop/desktop devices.
-
-![Screenshot](https://propertyportal.s3.ap-south-1.amazonaws.com/images/property-portal1.png)
 
 [Youtube Link](https://www.youtube.com/watch?v=hPc1W4SeKMA)
