@@ -9,7 +9,7 @@ function Footer() {
         <img className="memoji" src="images/memojis/hari_memoji.png" alt="Sabesh's Memoji" />
         <img className="memoji" src="images/memojis/sabesh_memoji.png" alt="Sabesh's Memoji" />
       </div>
-
+      <a href="https://vercel.com/?utm_soure=luxecraft&utm_campaign=oss"><img className="close-btn" src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"/></a>
       <p className="footer-text-bottom">&copy;{new Date().getFullYear()} Property Portal</p>
     </div>);
 }
