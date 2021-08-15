@@ -1,9 +1,9 @@
-import React from "react";
-import { connectRange } from "react-instantsearch-dom";
-import "rheostat/initialize";
-import Rheostat from "rheostat";
-import "rheostat/css/rheostat.css";
-import priceFormatter from "../PriceFormatter";
+import React from 'react';
+import { connectRange } from 'react-instantsearch-dom';
+import 'rheostat/initialize';
+import Rheostat from 'rheostat';
+import 'rheostat/css/rheostat.css';
+import priceFormatter from '../PriceFormatter';
 
 const RangeSlider = ({ min, max, currentRefinement, canRefine, refine }) => {
   const [stateMin, setStateMin] = React.useState(min);
@@ -56,4 +56,4 @@ const RangeSlider = ({ min, max, currentRefinement, canRefine, refine }) => {
 };
 
 const CustomRangeSlider = connectRange(RangeSlider);
-export default CustomRangeSlider; 
+export default CustomRangeSlider;

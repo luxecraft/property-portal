@@ -4,7 +4,7 @@ import CustomMap from '../customized/CustomMap';
 const imagesDirectory = 'images/';
 
 export default function PropertyDetailsComponent(props) {
-  const propertyDetailsParser = data => {
+  const propertyDetailsParser = (data) => {
     let temp_data = [];
     for (let i = 0; i < data.length; ++i) {
       if (!temp_data.includes(data[i])) {
@@ -21,7 +21,7 @@ export default function PropertyDetailsComponent(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const monthFinder = mo => {
+  const monthFinder = (mo) => {
     switch (parseInt(mo)) {
       case 1:
         return 'January';
@@ -79,23 +79,23 @@ export default function PropertyDetailsComponent(props) {
             width="2em"
             height="2em"
             viewBox="0 0 16 16"
-            class="bi bi-arrow-left myPath"
+            className="bi bi-arrow-left myPath"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
               <linearGradient id="MyGradient">
-                <stop offset="5%" stop-color="#ffa760" />
-                <stop offset="95%" stop-color="#ff5d83" />
+                <stop offset="5%" stopColor="#ffa760" />
+                <stop offset="95%" stopColor="#ff5d83" />
               </linearGradient>
             </defs>
 
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
@@ -182,7 +182,7 @@ export default function PropertyDetailsComponent(props) {
               <ul>
                 {propertyDetailsParser(currentProperty.amenities_facet).map(
                   (item, i) => (
-                    <li>{item}</li>
+                    <li key={i}>{item}</li>
                   )
                 )}
               </ul>
@@ -198,7 +198,7 @@ export default function PropertyDetailsComponent(props) {
                 {propertyDetailsParser(
                   currentProperty.amenities_extra_facet
                 ).map((item, i) => (
-                  <li>{item}</li>
+                  <li key={i}>{item}</li>
                 ))}
               </ul>
             ) : (

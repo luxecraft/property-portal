@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   GoogleMapsLoader,
   GeoSearch,
   Marker,
-} from "react-instantsearch-dom-maps";
-import ToggleTip from "../ToggleTip";
+} from 'react-instantsearch-dom-maps';
+import ToggleTip from '../ToggleTip';
 
 function Map() {
-
   const toggleToolTip = () => {
-    settoggleTipHit(null)
-  }
+    settoggleTipHit(null);
+  };
 
   const [toggleTipHit, settoggleTipHit] = useState(null);
   const renderToggleTip = (hit) => {
@@ -32,12 +31,14 @@ function Map() {
                     />
                   </>
                 ))}
-                {toggleTipHit ? <ToggleTip toggler={toggleToolTip} hit={toggleTipHit} /> : null}
+                {toggleTipHit ? (
+                  <ToggleTip toggler={toggleToolTip} hit={toggleTipHit} />
+                ) : null}
               </div>
             )}
           </GeoSearch>
         )}
-        { }
+        {}
       </GoogleMapsLoader>
     </div>
   );

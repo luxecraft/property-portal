@@ -5,8 +5,8 @@ function OngoingFacet() {
   return (
     <RefinementList
       attribute="construction_status"
-      transformItems={items =>
-        items.map(item => {
+      transformItems={(items) =>
+        items.map((item) => {
           let label = item.label;
           if (label === 'true') {
             label = 'Ongoing';

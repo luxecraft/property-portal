@@ -1,16 +1,15 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import RentalComponent from "./components/pages/RentalComponent";
-import SaleComponent from "./components/pages/SaleComponent";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import RentalComponent from './components/pages/RentalComponent';
+import SaleComponent from './components/pages/SaleComponent';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PropertyDetailsComponent from "./components/pages/PropertyDetailsComponent";
+import PropertyDetailsComponent from './components/pages/PropertyDetailsComponent';
 import { AnimatedSwitch } from 'react-router-transition';
-import ContactUs from "./components/pages/ContactUs";
-require('dotenv').config()
+import ContactUs from './components/pages/ContactUs';
 
 export default function App() {
   return (
@@ -35,7 +34,10 @@ export default function App() {
           <Route exact path="/contact">
             <ContactUs />
           </Route>
-          <Route path="/property-details" render={(props) => <PropertyDetailsComponent {...props} />} />
+          <Route
+            path="/property-details"
+            render={(props) => <PropertyDetailsComponent {...props} />}
+          />
         </AnimatedSwitch>
         <Footer />
       </Router>

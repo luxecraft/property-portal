@@ -1,5 +1,5 @@
-import { RefinementList } from "react-instantsearch-dom";
-import React from "react";
+import { RefinementList } from 'react-instantsearch-dom';
+import React from 'react';
 
 function NewFacet() {
   return (
@@ -8,10 +8,10 @@ function NewFacet() {
       transformItems={(items) =>
         items.map((item) => {
           let label = item.label;
-          if (label === "true") {
-            label = "New";
+          if (label === 'true') {
+            label = 'New';
           } else {
-            label = "Old";
+            label = 'Old';
           }
           let temp = {
             ...item,
@@ -24,4 +24,4 @@ function NewFacet() {
   );
 }
 
-export default NewFacet; 
+export default NewFacet;

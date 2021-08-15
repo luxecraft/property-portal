@@ -1,5 +1,5 @@
-import React from "react";
-import { RefinementList } from "react-instantsearch-dom";
+import React from 'react';
+import { RefinementList } from 'react-instantsearch-dom';
 
 function BhkFacet() {
   return (
@@ -8,7 +8,7 @@ function BhkFacet() {
       transformItems={(items) =>
         items.map((item) => {
           let label = item.label;
-          label = label + " BHK";
+          label = label + ' BHK';
           let temp = {
             ...item,
             label: label,
@@ -21,4 +21,4 @@ function BhkFacet() {
   );
 }
 
-export default BhkFacet; 
+export default BhkFacet;

@@ -1,7 +1,7 @@
-import React from "react";
-import { InstantSearch } from "react-instantsearch-dom";
-import SearchComponent from "../SearchComponent";
-import searchClient from "../TypesenseConfig";
+import React from 'react';
+import { InstantSearch } from 'react-instantsearch-dom';
+import SearchComponent from '../SearchComponent';
+import searchClient from '../TypesenseConfig';
 
 function RentalComponent() {
   return (
@@ -13,4 +13,4 @@ function RentalComponent() {
   );
 }
 
-export default RentalComponent; 
+export default RentalComponent;

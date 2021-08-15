@@ -10,7 +10,7 @@ function Hit(props) {
   const [redirect, setRedirect] = useState(false);
   const [hitProp, setHitProp] = useState({});
 
-  const sendProps = hit => {
+  const sendProps = (hit) => {
     setHitProp(hit);
     setRedirect(true);
   };
@@ -36,7 +36,7 @@ function Hit(props) {
         />
 
         {props.hit.construction_status != null ? (
-          <div class="overlay">
+          <div className="overlay">
             {props.hit.construction_status != true ? 'Completed' : 'On-Going'}
           </div>
         ) : null}
@@ -73,9 +73,10 @@ function Hit(props) {
           <Link className="unstyled btn btn-success" to="/contact">
             Contact
           </Link>
-          <p className="hit-price" onClick={() => sendProps(props.hit)}>₹{priceFormatter(props.hit.price)}</p>
+          <p className="hit-price" onClick={() => sendProps(props.hit)}>
+            ₹{priceFormatter(props.hit.price)}
+          </p>
         </div>
-
       </div>
     </div>
   );

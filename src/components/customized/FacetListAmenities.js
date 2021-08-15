@@ -1,5 +1,5 @@
-import React from "react";
-import { RefinementList } from "react-instantsearch-dom";
+import React from 'react';
+import { RefinementList } from 'react-instantsearch-dom';
 
 function FacetListAmenities() {
   return (
@@ -20,4 +20,4 @@ function FacetListAmenities() {
   );
 }
 
-export default FacetListAmenities; 
+export default FacetListAmenities;

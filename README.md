@@ -1,8 +1,6 @@
 # Property Portal
 
-![Typesense](https://img.shields.io/badge/poweredby-typesense-blue)
-![GitHub commit checks state](https://img.shields.io/github/checks-status/HarisaranG/property-portal-hackathon/eeb786091b3a4f8ca19b38f4f218dacb28d070d3?logoColor=green)
-![GitHub](https://img.shields.io/github/license/HarisaranG/property-portal-hackathon?logoColor=orange)
+![Typesense](https://img.shields.io/badge/poweredby-typesense-blue) ![GitHub commit checks state](https://img.shields.io/github/checks-status/HarisaranG/property-portal-hackathon/eeb786091b3a4f8ca19b38f4f218dacb28d070d3?logoColor=green) ![GitHub](https://img.shields.io/github/license/HarisaranG/property-portal-hackathon?logoColor=orange)
 
 [![Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com/?utm_soure=luxecraft&utm_campaign=oss)
 
@@ -37,7 +35,7 @@ This project aimed to deliver blazing fast search results, even on applying mult
 - AWS S3
 - AWS Lambda
 - ReactJS
-- Bootstrap 
+- Bootstrap
 
 ## SDKs and APIs used
 
