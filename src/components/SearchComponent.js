@@ -25,29 +25,29 @@ import SortBySale from './customized/SortyBySale';
 import OngoingFacet from './customized/OngoingFacet';
 
 export default function SearchComponent({ name }) {
+  const [currentOS, setCurrentOS] = useState('Windows');
 
-  const [currentOS, setCurrentOS] = useState('Windows')
-
-  const [isSearchActive, setIsSearchActive] = useState(true)
+  const [isSearchActive, setIsSearchActive] = useState(true);
 
   const getOS = () => {
-    if (navigator.appVersion.indexOf("Mac") != -1) {
-      setCurrentOS('macOS')
+    if (navigator.appVersion.indexOf('Mac') != -1) {
+      setCurrentOS('macOS');
     }
-  }
+  };
 
   let keysPressed = {};
 
   useEffect(() => {
-
-    getOS()
+    getOS();
 
     document.addEventListener('click', (event) => {
-      if (document.activeElement != document.getElementsByClassName('ais-SearchBox-input')[0]) {
-        setIsSearchActive(true)
-      }
-      else {
-        setIsSearchActive(false)
+      if (
+        document.activeElement !=
+        document.getElementsByClassName('ais-SearchBox-input')[0]
+      ) {
+        setIsSearchActive(true);
+      } else {
+        setIsSearchActive(false);
       }
     });
 
@@ -55,9 +55,9 @@ export default function SearchComponent({ name }) {
       keysPressed[event.key] = true;
 
       if ((keysPressed['Meta'] || keysPressed['Control']) && event.key == 'k') {
-        event.preventDefault()
-        document.getElementsByClassName('ais-SearchBox-input')[0].focus()
-        setIsSearchActive(false)
+        event.preventDefault();
+        document.getElementsByClassName('ais-SearchBox-input')[0].focus();
+        setIsSearchActive(false);
         return false;
       }
     });
@@ -65,8 +65,7 @@ export default function SearchComponent({ name }) {
     document.addEventListener('keyup', (event) => {
       delete keysPressed[event.key];
     });
-
-  }, [])
+  }, []);
 
   return (
     <div className="main-area">
@@ -102,22 +101,28 @@ export default function SearchComponent({ name }) {
             submit={
               <img className="icon" src="/images/icons/search.png" alt="" />
             }
-            reset={<img className="icon" src="/images/icons/close.png" alt="" />}
+            reset={
+              <img className="icon" src="/images/icons/close.png" alt="" />
+            }
             translations={{
               placeholder: 'Type City, Street name, State, Project, Builder',
             }}
           />
-          {
-            (isSearchActive) ?
-              <div className="search-hotkeys">
-
-                <>
-                  <img src={(currentOS == "Windows") ? "images/icons/ctrl.svg" : "images/icons/cmd.svg"} alt="hotkey" />
-                  <img src="images/icons/k.svg" alt="hotkey" />
-                </>
-
-              </div> : null
-          }
+          {isSearchActive ? (
+            <div className="search-hotkeys">
+              <>
+                <img
+                  src={
+                    currentOS == 'Windows'
+                      ? 'images/icons/ctrl.svg'
+                      : 'images/icons/cmd.svg'
+                  }
+                  alt="hotkey"
+                />
+                <img src="images/icons/k.svg" alt="hotkey" />
+              </>
+            </div>
+          ) : null}
           {name === 'rent' ? <SortByRental /> : <SortBySale />}
         </div>
         <CustomStats />
@@ -127,7 +132,6 @@ export default function SearchComponent({ name }) {
           <div>
             <ToastComponent />
             <Map />
-
           </div>
         </div>
         <div

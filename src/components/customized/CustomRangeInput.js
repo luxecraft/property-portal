@@ -1,19 +1,19 @@
-import React from "react";
-import { connectRange } from "react-instantsearch-core";
-import priceFormatter from "../PriceFormatter";
+import React from 'react';
+import { connectRange } from 'react-instantsearch-core';
+import priceFormatter from '../PriceFormatter';
 
 const rangeInputParser = (event, min, max) => {
-  const re = new RegExp("^([0-9])+(.*[0-9])?[LC]?$");
+  const re = new RegExp('^([0-9])+(.*[0-9])?[LC]?$');
   if (re.test(value)) {
     return min;
   }
-  if (event.currentTarget.value == "") {
+  if (event.currentTarget.value == '') {
     return min;
   }
   let value = event.currentTarget.value;
   for (let i = 0; i < value.length; ++i) {
-    if (["C", "c", "l", "L"].includes(value[i])) {
-      let j = ["C", "c", "l", "L"].indexOf(value[i]);
+    if (['C', 'c', 'l', 'L'].includes(value[i])) {
+      let j = ['C', 'c', 'l', 'L'].indexOf(value[i]);
       if (j == 0 || j == 1) {
         value = parseFloat(value.slice(0, j));
         value *= 10000000;
@@ -23,7 +23,7 @@ const rangeInputParser = (event, min, max) => {
       }
     }
   }
-  if (typeof value === "string") {
+  if (typeof value === 'string') {
     value = parseFloat(value);
   }
   if (isNaN(value)) {
@@ -68,5 +68,5 @@ const RangeInput = ({ currentRefinement, refine, min, max }) => (
     />
   </form>
 );
-const CustomRangeInput = connectRange(RangeInput); 
+const CustomRangeInput = connectRange(RangeInput);
 export default CustomRangeInput;

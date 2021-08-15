@@ -1,5 +1,5 @@
-import React from "react";
-import { RefinementList } from "react-instantsearch-dom";
+import React from 'react';
+import { RefinementList } from 'react-instantsearch-dom';
 
 function FacetListAmenities() {
   return (
@@ -9,8 +9,8 @@ function FacetListAmenities() {
         items.map((item) => {
           let label = item.label;
           label = label[0].toUpperCase() + label.slice(1, label.length);
-          if (label === "Swimming") {
-            label = "Swimming Pool";
+          if (label === 'Swimming') {
+            label = 'Swimming Pool';
           }
           let temp = {
             ...item,
@@ -23,4 +23,4 @@ function FacetListAmenities() {
   );
 }
 
-export default FacetListAmenities; 
+export default FacetListAmenities;

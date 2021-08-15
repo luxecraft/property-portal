@@ -37,7 +37,9 @@ function Home() {
                 <li>Suggestions based on current location</li>
                 <li>Scale up to millions of records</li>
                 <li>Making the web app responsive</li>
-                <li>Use search parameters like near me, within a 5 km radius</li>
+                <li>
+                  Use search parameters like near me, within a 5 km radius
+                </li>
               </ul>
             </p>
           </div>

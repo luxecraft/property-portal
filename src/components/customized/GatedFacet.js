@@ -1,5 +1,5 @@
-import React from "react";
-import { RefinementList } from "react-instantsearch-dom";
+import React from 'react';
+import { RefinementList } from 'react-instantsearch-dom';
 
 function GatedFacet() {
   return (
@@ -8,10 +8,10 @@ function GatedFacet() {
       transformItems={(items) =>
         items.map((item) => {
           let label = item.label;
-          if (label === "true") {
-            label = "Gated Community";
+          if (label === 'true') {
+            label = 'Gated Community';
           } else {
-            label = "Non-Gated Community";
+            label = 'Non-Gated Community';
           }
           let temp = {
             ...item,
@@ -25,4 +25,4 @@ function GatedFacet() {
   );
 }
 
-export default GatedFacet; 
+export default GatedFacet;

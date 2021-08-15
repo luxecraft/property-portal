@@ -17,13 +17,13 @@ async function PostContact(contactForm) {
 
   // Handle promise's fulfilled/rejected states
   publishTextPromise
-    .then(function(data) {
+    .then(function (data) {
       console.log(
         `Message ${params.Message} sent to the topic ${params.TopicArn}`
       );
       console.log('MessageID is ' + data.MessageId);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.error(err, err.stack);
     });
 }
