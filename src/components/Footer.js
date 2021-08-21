@@ -37,7 +37,7 @@ function Footer() {
           alt="Sabesh's Memoji"
         />
       </div>
-      <a href="https://vercel.com/?utm_soure=luxecraft&utm_campaign=oss">
+      <a href="https://vercel.com/?utm_source=luxecraft&utm_campaign=oss">
         <img
           className="close-btn"
           src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
