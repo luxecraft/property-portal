@@ -25,3 +25,5 @@ yarn-error.log*
 
 .vercel
 .vscode
+
+scripts/**
