@@ -6,8 +6,8 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     nodes: [
       {
         host: process.env.REACT_APP_TYPESENSE_URL,
-        port: '8108',
-        protocol: 'http',
+        port: '443',
+        protocol: 'https',
       },
     ],
   },
