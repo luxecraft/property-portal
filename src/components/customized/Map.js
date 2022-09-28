@@ -17,7 +17,7 @@ function Map() {
   };
   return (
     <div className="hitsMap">
-      <GoogleMapsLoader apiKey="AIzaSyBVG1AFgOTC7nAqOFY3Tmb1KAUqoWRzuUo">
+      <GoogleMapsLoader apiKey="AIzaSyAf85FUBtCy2eyCF4BoBBDoh4j9m_lxhC8">
         {(google) => (
           <GeoSearch google={google}>
             {({ hits }) => (
